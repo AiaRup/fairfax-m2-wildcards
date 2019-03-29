@@ -1,0 +1,10 @@
+.header__logo {
+    background: $color-back;
+    display: flex;
+    justify-content: center;
+    margin-top: rem(100);
+}
+.header__logo-img {
+    width: rem(250);
+    height: rem(63);
+}

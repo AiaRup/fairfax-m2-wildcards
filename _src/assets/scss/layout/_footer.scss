@@ -1,0 +1,22 @@
+.page__footer {
+    border-top: rem(1) solid $color-border;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.footer__copyright-name{
+    font-size: rem(14);
+    color: $color-grey;
+    font-family: $openSans;
+    opacity: 0.5;
+    margin-top: rem(20);
+}
+.footer__logo-adalab {
+    width: rem(103);
+    height: rem(40);
+    margin: rem(20);
+}
