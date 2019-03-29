@@ -3,8 +3,17 @@
     display: flex;
     justify-content: center;
     margin-top: rem(100);
+    @include mq($bp-tablet) {
+        margin-top: rem(350);
+        //Revisar esto y probar si no es mejor
+        //poner un porcentaje
+    }
 }
 .header__logo-img {
     width: rem(250);
     height: rem(63);
+    @include mq($bp-tablet) {
+        width: rem(419);
+        height: rem(105);
+    }
 }
