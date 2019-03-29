@@ -13,7 +13,7 @@ body {
   padding: 0;
   font-family: $openSans;
   color: $color-black;
-  @include mq($bp-tablet) {
-    background-color: red;
-  }
+  // @include mq($bp-tablet) {
+  //   background-color: red;
+  // }
 }
