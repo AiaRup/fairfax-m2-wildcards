@@ -1,14 +1,23 @@
 .main__preview {
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   padding: rem(35) 0 rem(40);
-  margin: 0 auto;
+  @include mq($bp_tablet) {
+    // grid-column: 2/3;
+    // grid-row: 1/2;
+    margin: rem(22) 0;
+    padding: rem(173) 0 rem(260);
+  }
 }
 
+.page-card__wrapper {
+  width: 100%;
+  max-width: rem(240);
+  margin: 0 auto;
+}
 .preview__button {
   height: rem(30);
   font-family: $openSans;
   font-size: rem(12);
-  font-weight: normal;
   line-height: 1.67;
   border-radius: 15px;
   border: rem(1) solid $color-white;
@@ -16,15 +25,15 @@
   text-transform: uppercase;
   margin-bottom: rem(20);
   color: $color-grey;
-  padding: 0 rem(10);
+  padding: rem(5) rem(10);
+  cursor: pointer;
   .trash-icon {
     margin-right: rem(8);
   }
 }
 
 .preview__card {
-  width: 100%;
-  max-width: rem(240);
+  min-width: rem(240);
   border-radius: rem(2);
   box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2), 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
   background-color: $color-white;
