@@ -1,19 +1,42 @@
+// .header__logo {
+//     background: $color-back;
+//     display: flex;
+//     justify-content: center;
+//     margin-top: rem(100);
+//     @include mq($bp-tablet) {
+//         margin-top: rem(350);
+//         //Revisar esto y probar si no es mejor
+//         //poner un porcentaje
+//     }
+// }
+// .header__logo-img {
+//     width: rem(250);
+//     height: rem(63);
+//     // @include mq($bp-tablet) {
+//     //     width: rem(419);
+//     //     height: rem(105);
+//     // }
+// }
+
+// Create-cards header
+.wrapper {
+    margin: 0 rem(40);
+}
 .header__logo {
-    background: $color-back;
+    height: rem(111);
+    width: 100vw;  
     display: flex;
-    justify-content: center;
-    margin-top: rem(100);
-    @include mq($bp-tablet) {
-        margin-top: rem(350);
-        //Revisar esto y probar si no es mejor
-        //poner un porcentaje
-    }
+    justify-content: center;  
+    align-content: center;
+    // @include mq($bp-tablet) {
+    //     justify-content: flex-start;
+    // }
+}
+.header__title {
+    display: flex;
+    align-items: center;
 }
 .header__logo-img {
-    width: rem(250);
-    height: rem(63);
-    @include mq($bp-tablet) {
-        width: rem(419);
-        height: rem(105);
-    }
+    width: rem(201);
+    height: rem(50);
 }
