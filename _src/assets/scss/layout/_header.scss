@@ -1,13 +1,35 @@
-// .header__logo {
-//     background: $color-back;
-//     display: flex;
-//     justify-content: center;
-// }
-// .header__logo-img {
-//     width: rem(250);
-//     height: rem(63);
-//     @include mq($bp-tablet) {
-//         width: rem(419);
-//         height: rem(105);
-//     }
-// }
+.header__logo {
+    background: $color-back;
+    display: flex;
+    justify-content: center;
+}
+.header__logo-img {
+    width: rem(250);
+    height: rem(63);
+    @include mq($bp-tablet) {
+        width: rem(419);
+        height: rem(105);
+    }
+}
+//CREATE CARD HEADER STYLE
+.page-card .page__header .wrapper {
+    margin: 0 rem(30);
+    @include mq($bp-tablet) {
+      margin: 0 rem(40);
+    }
+  }
+  .page-card .page__header .header__logo {
+    background: $color-white;
+    height: rem(111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @media all and (min-width: 768px) {
+    //     justify-content: flex-start;
+    // }
+
+}
+.page-card .page__header .header__logo-img {
+    width: rem(201);
+    height: rem(50);
+}
