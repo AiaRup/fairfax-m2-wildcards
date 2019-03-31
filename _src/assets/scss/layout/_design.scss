@@ -1,0 +1,139 @@
+.design__main {
+    padding: rem(30) rem(20);
+    border-bottom: rem(1) solid #d8d8d8;
+}
+
+.design__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(25);
+}
+
+.design__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.design-icon {
+    padding-right: rem(10);
+    color: $color-orange;
+}
+
+.design__title-text {
+    font-family: $openSans;
+    font-size: rem(18);
+    color: #54585a;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.design__button {
+    width: rem(16);
+    height: rem(18);
+    background-color: transparent;
+    border: none;
+}
+
+.design__colors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.design__colors-title {
+    font-family: $openSans;
+    font-size: rem(14);
+    color: #54585a;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    padding-left: rem(20);
+}
+
+.design__colors-list {
+    list-style: none;
+    .colors-list-element:last-child {
+        padding-bottom: rem(0);
+    }
+}
+
+.rectangle {
+    width: 30px;
+    height: 25px;
+}
+.rectangle-1 {
+    background-color: $color-gBlue;
+}
+.rectangle-2 {
+    background-color: $color-dBlue;
+}
+.rectangle-3 {
+    background-color: $color-green;
+}
+.rectangle-4 {
+    background-color: #420101;
+}
+.rectangle-5 {
+    background-color: #bd1010;
+}
+.rectangle-6 {
+    background-color: #e95626;
+}
+.rectangle-7 {
+    background-color: #3e5b65;
+}
+.rectangle-8 {
+    background-color: #dfe5eb;
+}
+.rectangle-9 {
+    background-color: #a0c0cf;
+}
+
+.palettecolor {
+    display: flex;
+    .rectangle:first-child {
+        margin-left: rem(10);
+    }
+}
+
+.colors-list-element {
+    padding-bottom: rem(20);
+}
+
+.section1 {
+    
+}
+
+#selection1 {
+    position: absolute;
+    left: rem(184);
+    top: rem(84);
+    width: rem(17);
+    height: rem(17);
+    transition:0.2s ease;
+}
+
+#selection2 {
+    position: absolute;
+    left: rem(184);
+    top: rem(129);
+    width: rem(17);
+    height: rem(17);
+    transition:0.2s ease;
+}
+
+#selection3 {
+    position: absolute;
+    left: rem(184);
+    top: rem(174);
+    width: rem(17);
+    height: rem(17);
+    transition:0.2s ease;
+}
