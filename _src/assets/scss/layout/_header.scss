@@ -7,8 +7,8 @@
 .header__logo-img {
     width: rem(250);
     height: rem(63);
-    // @include mq($bp-tablet) {
-    //     width: rem(419);
-    //     height: rem(105);
-    // }
+    @include mq($bp-tablet) {
+        width: rem(419);
+        height: rem(105);
+    }
 }
