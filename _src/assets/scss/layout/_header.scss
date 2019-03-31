@@ -24,9 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // @media all and (min-width: 768px) {
-    //     justify-content: flex-start;
-    // }
+    @media all and (min-width: 768px) {
+        justify-content: flex-start;
+    }
 
 }
 .page-card .page__header .header__logo-img {
