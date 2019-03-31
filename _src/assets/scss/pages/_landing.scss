@@ -9,21 +9,31 @@
     justify-content: center;
     align-items: center;
     padding: 95px 35px 35.4px 35px;
-
     & img{
         width: 250px;
         height: 63px;
     }
+    @media all and (min-width: 768px){
+        padding: 350px 174px 31px 175px;
+        & img{
+            width: 419px;
+            height: 105px;
+        }
+    }
 }
 .main__landing {
     background-color: #f5f5f5;
-    text-align: center;
+    text-align: center;   
 }
+
 .main__landing-title {
     color: $color-orange;
     font-family: $merri;
-    font-size: 19.2px;
+    font-size: 19px;
     padding-bottom: 1px;
+    @media all and (min-width: 768px){
+        font-size: 24px;
+    }
 }
 .main__landing-text {
     color: $color-gBlue;
@@ -31,6 +41,11 @@
     font-size: 12.8px;
     width: 264.8px;
     padding-bottom: 16.8px;
+
+    @media all and (min-width: 768px){
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
 }
 .main__landing-list {
     width: 268px;
@@ -39,19 +54,31 @@
     list-style: none;
     border: solid 1.6px rgba(225, 115, 52, 0.21);
     border-radius: 4px;
+
+    @media all and (min-width: 768px){
+    width: 325px;
+    height: 86px;
+    }
 }
 .main__landing-list li{
     font-family: $openSans;
     font-size: 12.8px;
     color: #54585a;
     padding: 15px;
+   
 }
 .main__landing-list i {
     color: $color-orange;
+    font-size: 22px;
+
+    @media all and (min-width: 768px){
+        font-size: 28px;
+    }
 }
 .main__landing-design {}
 .main__landing-fill {}
 .main__landing-share {}
+
 .main__landing-start {
     width: 129px;
     height: 42px;
@@ -62,6 +89,7 @@
     border-radius: 21px;
     padding: 10px 20px;
     margin-top: 38.6px;
+    
 }
 .main__landing-s {
     color: $color-white;
