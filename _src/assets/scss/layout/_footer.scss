@@ -14,12 +14,12 @@
     align-items: center;
     height: 120px;
     //mediaquereies don't work
-    // @include mq($bp-tablet) {
-    //     margin: 0 rem(60);
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
+    @include mq($bp-tablet) {
+        margin: 0 rem(60);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .footer__copyright {
     margin: 0;
