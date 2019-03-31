@@ -38,12 +38,16 @@
     justify-content: space-between;
     list-style: none;
     border: solid 1.6px rgba(225, 115, 52, 0.21);
- 
-    
-    
-    
-
-    
+    border-radius: 4px;
+}
+.main__landing-list li{
+    font-family: $openSans;
+    font-size: 12.8px;
+    color: #54585a;
+    padding: 15px;
+}
+.main__landing-list i {
+    color: $color-orange;
 }
 .main__landing-design {}
 .main__landing-fill {}
@@ -57,7 +61,7 @@
     text-transform: uppercase;
     border-radius: 21px;
     padding: 10px 20px;
-    margin: auto;
+    margin-top: 38.6px;
 }
 .main__landing-s {
     color: $color-white;
