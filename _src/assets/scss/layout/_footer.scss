@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     height: 120px;
-    //No sé poner la mq bien pero funciona cuando se descomenta
+    //mediaquereies don't work
     // @include mq($bp-tablet) {
     //     margin: 0 rem(60);
     //     flex-direction: row;
