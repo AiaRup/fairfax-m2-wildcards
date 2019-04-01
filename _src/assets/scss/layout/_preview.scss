@@ -1,0 +1,84 @@
+.main__preview {
+  background: rgb(249, 244, 220);
+  background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
+  padding: rem(35) 0 rem(40);
+  @include mq($bp_tablet) {
+    margin: rem(22) 0;
+    padding: rem(173) 0 rem(260);
+  }
+}
+
+.page-card__wrapper {
+  width: 100%;
+  max-width: rem(240);
+  margin: 0 auto;
+}
+.preview__button {
+  height: rem(30);
+  font-family: $openSans;
+  font-size: rem(12);
+  line-height: 1.67;
+  border-radius: 15px;
+  border: rem(1) solid $color-white;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: rem(20);
+  color: $color-darkGrey;
+  padding: rem(5) rem(10);
+  cursor: pointer;
+  .trash-icon {
+    margin-right: rem(8);
+  }
+}
+
+.preview__card {
+  min-width: rem(240);
+  border-radius: rem(2);
+  box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2), 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
+  background-color: $color-white;
+  padding: rem(21) 0 rem(12);
+}
+
+.card__header {
+  margin-bottom: rem(10);
+  border-left: rem(5) solid $color-green;
+  .card__name {
+    margin: 0 0 rem(4) rem(15);
+    text-transform: capitalize;
+    font-family: $montse;
+    font-size: rem(18);
+    font-weight: bold;
+    line-height: 1.11;
+    color: $color-gBlue;
+  }
+
+  .card__job {
+    margin-left: rem(15);
+    font-family: $montse;
+    font-size: rem(16);
+    line-height: 1.25;
+    color: $color-darkGrey;
+    text-transform: initial;
+  }
+}
+
+.card__links-list {
+  margin: rem(10) 0 0 rem(20);
+  list-style: none;
+  display: grid;
+  grid-gap: rem(10);
+  grid-template-columns: repeat(4, rem(32));
+  text-align: center;
+}
+
+.card__link-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-gBlue;
+  font-size: rem(18);
+  width: rem(32);
+  height: rem(32);
+  border-radius: rem(16);
+  border: rem(2) solid $color-green;
+}
