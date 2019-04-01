@@ -4,25 +4,22 @@
   // bottom: 0;
   // left: 0;
   // width: 100vw;
-  margin: 0 rem(30);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  // height: rem(120);
   text-align: center;
-  //mediaquereies don't work
   @include mq($bp-tablet) {
-    margin: 0 rem(60);
+    margin: 0 rem(40);
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
-
 .footer__copyright {
   margin: 0;
-  margin-top: rem(20);
 }
 .footer__copyright-name,
 .footer__wildcards {
@@ -31,15 +28,12 @@
   font-family: $openSans;
   opacity: 0.5;
   margin-bottom: rem(11);
-
   @include mq($bp-tablet) {
-    margin: 0;
+    margin-top: rem(11);
   }
 }
 .footer__logo-adalab {
   width: rem(103);
-  // height: rem(48);
-  // margin: rem(11);
 }
 
 .page-card .page__footer .footer__logo-adalab {
