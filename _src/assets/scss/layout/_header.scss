@@ -1,34 +1,47 @@
-.page__header {
-    background: $color-back;
-}
 .header__logo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: rem(100);
+  background: $color-back;
+  display: flex;
+  justify-content: center;
+  padding-top: rem(95);
+  @include mq($bp-tablet) {
+    padding-top: rem(350);
+  }
 }
 .header__logo-img {
-    width: rem(250);
-    height: rem(63);
-    @include mq($bp-tablet) {
-        width: rem(419);
-        height: rem(105);
-    }
+  background: url('../images/awesome-logo.svg') center center no-repeat;
+  background-size: contain;
+  height: 0;
+  overflow: hidden;
+  padding-top: rem(95);
+  width: rem(250);
+  // height: rem(63);
+  // margin-top: rem(95);
+  @include mq($bp-tablet) {
+    width: rem(420);
+    // height: rem(105);
+  }
 }
 //CREATE CARD HEADER STYLE
-.page-card .page__header {
-    background: $color-white;
+//I don't know how to open this page
+.page-card .page__header .wrapper {
+  margin: 0 rem(30);
+  @include mq($bp-tablet) {
+    margin: 0 rem(40);
+  }
 }
 .page-card .page__header .header__logo {
-    height: rem(111);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media all and (min-width: 768px) {
-        justify-content: flex-start;
-    }
+  background: $color-white;
+  height: rem(111);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq($bp_tablet) {
+    justify-content: flex-start;
+  }
 }
 .page-card .page__header .header__logo-img {
-    width: rem(201);
-    height: rem(50);
+  width: rem(201);
+  height: rem(50);
+  // margin-top: rem(395);
+  margin-top: 0;
 }
