@@ -1,9 +1,8 @@
 .main__preview {
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background: rgb(249, 244, 220);
+  background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
   padding: rem(35) 0 rem(40);
   @include mq($bp_tablet) {
-    // grid-column: 2/3;
-    // grid-row: 1/2;
     margin: rem(22) 0;
     padding: rem(173) 0 rem(260);
   }
