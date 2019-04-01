@@ -1,9 +1,6 @@
 .design__main {
-    padding: rem(30) rem(20);
+    padding-bottom: rem(30);
     border-bottom: rem(1) solid #d8d8d8;
-    @include mq($bp_tablet) {
-        padding : rem(30) rem(0);
-      }
 }
 
 .design__title-wrapper {
@@ -38,6 +35,8 @@
 .design__button {
     width: rem(16);
     height: rem(18);
+    font-size: rem(18);
+    color: #54585a;
     background-color: transparent;
     border: none;
 }

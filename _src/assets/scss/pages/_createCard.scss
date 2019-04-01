@@ -9,6 +9,7 @@
 }
 
 .main__settings {
+  padding: rem(30) rem(20);
   @include mq($bp_tablet) {
     grid-column: 1/2;
     grid-row: 1/2;

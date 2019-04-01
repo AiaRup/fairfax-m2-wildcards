@@ -1,5 +1,5 @@
 .share__main {
-    padding: rem(30) rem(20);
+    padding-top: rem(10);
     display: flex;
     flex-direction: column;
 }
@@ -36,6 +36,8 @@
 .share__button-arrow {
     width: rem(16);
     height: rem(18);
+    font-size: rem(18);
+    color: #54585a;
     background-color: transparent;
     border: none;
 }
@@ -57,6 +59,7 @@
     letter-spacing: normal;
     text-transform: uppercase;
     align-self: center;
+    margin-bottom: rem(30);
     &:visited {
         background-color: #d5d5d5;
     }
@@ -68,12 +71,10 @@
 .share__hidden {
     border-top: rem(1) solid #d8d8d8;
     border-bottom: rem(1) solid #d8d8d8;
-    margin: rem(30);
     padding: rem(20) rem(0) rem(30) rem(0);
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
 }
 .share__text {
     font-family: $openSans;
