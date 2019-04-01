@@ -1,10 +1,69 @@
 .fill__container-title {
-    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px; 
+}
+
+.fa-keyboard {
+    font-size: 32px;
+    color: orange;
+}
+
+.title__fill {
+    margin: 0;
+    padding: 0 0 25px 10px; 
+    color: #54585a;
+}
+
+.fa-chevron-down {
+    margin: 0;
+    padding: 0 0 25px 10px; 
+    color: #54585a;
+}
+
+.title__fill {
+    text-transform: uppercase;
+    
 }
 
 .fill__container-form {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    padding: 0 20px; 
+    font-size: 14px; 
+}
+
+.label {
+    text-transform: capitalize;
+}
+
+
+.fill__field {
+    margin-right: 0; 
+    padding-bottom: 20px; 
+}
+
+.field {
+    display: block;
+    border: 1px solid #a2deaf;
+    color: #c5c5c5;
+}
+
+.fill__add-img {
+    display: block;
+}
+
+.fill__button {
+    width: 140px;
+    height: 30px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border-radius: 3px; 
+    padding: 4px 22px 6px 22px; 
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.fill__preview-little {
+    display: inline;
+    width: 30px; 
+    height: 30px;
+    border: 1px solid #a2deaf;
 }
