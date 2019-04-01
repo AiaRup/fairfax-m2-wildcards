@@ -4,6 +4,10 @@
 .main__landing-header {
     background-color: #f5f5f5;
 }
+
+
+/*  LOGO 
+
 .main__landing-logo{  
     display: flex;
     justify-content: center;
@@ -21,12 +25,12 @@
             height: rem(105);
         }
     }
-}
+}*/
+
 .main__landing {
     background-color: #f5f5f5;
     text-align: center;   
 }
-
 .main__landing-title {
     color: $color-orange;
     font-family: $merri;
@@ -36,6 +40,7 @@
 
     @include mq($bp_tablet){
         font-size: rem(24);
+        font-weight: 900;
         padding-top: rem(31);
     }
 }
@@ -52,23 +57,25 @@
         width: rem(331);
     }
 }
-.main__landing-list {
+.main__landing-menu{
     width: rem(268);
     height: rem(74);
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
     border: solid rem(1.6) rgba(225, 115, 52, 0.21);
     border-radius: rem(4);
-
+    box-sizing: content-box;
     @include mq($bp_tablet){
-    width: rem(325);
-    height: rem(86);
- 
-    
+        width: rem(325);
+        height: rem(86);
+        padding: rem(0) rem(10) rem(0) rem(10);
     }
 }
-.main__landing-list li{
+.main__landing-list {
+    display: flex;
+    list-style: none;
+}
+.main__landing-item{
+    justify-content: center;
+    align-content: center;
     font-family: $openSans;
     font-size: rem(12.8);
     color: #54585a;
@@ -76,12 +83,10 @@
     @include mq($bp_tablet){
         font-size: rem(20);
     }
-   
 }
 .main__landing-list i {
     color: $color-orange;
     font-size: rem(22);
-
     @include mq($bp_tablet){
         font-size: rem(28);
     }
@@ -92,10 +97,14 @@
     background-color: $color-dBlue;
     font-family: $openSans;
     font-size: rem(16);
+    font-weight: 600;
     text-transform: uppercase;
     border-radius: rem(21);
     padding: rem(10) rem(20);
     margin-top: rem(38.6);
+    @include mq($bp_tablet){
+        margin-top: rem(186);
+    }
 }
 .main__landing-s {
     color: $color-white;
