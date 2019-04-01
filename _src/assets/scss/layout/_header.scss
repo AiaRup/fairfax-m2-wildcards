@@ -1,5 +1,7 @@
-.header__logo {
+.page__header {
     background: $color-back;
+}
+.header__logo {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -14,8 +16,10 @@
     }
 }
 //CREATE CARD HEADER STYLE
-.page-card .page__header .header__logo {
+.page-card .page__header {
     background: $color-white;
+}
+.page-card .page__header .header__logo {
     height: rem(111);
     display: flex;
     justify-content: center;
