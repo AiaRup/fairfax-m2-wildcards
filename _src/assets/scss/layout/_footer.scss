@@ -12,8 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    //mediaquereies don't work
+    height: rem(120);
     @include mq($bp-tablet) {
         margin: 0 rem(60);
         flex-direction: row;
