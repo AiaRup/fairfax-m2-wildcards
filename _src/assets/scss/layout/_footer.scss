@@ -1,45 +1,47 @@
-
 .page__footer {
-    border-top: rem(1) solid $color-border;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-}
-.footer__content {
-    margin: 0 rem(30);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  border-top: rem(1) solid $color-border;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // width: 100vw;
+  margin: 0 rem(30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  text-align: center;
+  //mediaquereies don't work
+  @include mq($bp-tablet) {
+    margin: 0 rem(60);
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 120px;
-    //mediaquereies don't work
-    @include mq($bp-tablet) {
-        margin: 0 rem(60);
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
 }
+
 .footer__copyright {
-    margin: 0;
+  margin: 0;
+  margin-top: rem(20);
 }
-.footer__copyright-name{
-    font-size: rem(14);
-    color: $color-grey;
-    font-family: $openSans;
-    opacity: 0.5;
-    margin-top: rem(20);
-    @include mq($bp-tablet) {
-        margin: 0;
-    }
+.footer__copyright-name,
+.footer__wildcards {
+  font-size: rem(14);
+  color: $color-grey;
+  font-family: $openSans;
+  opacity: 0.5;
+  margin-bottom: rem(11);
+
+  @include mq($bp-tablet) {
+    margin: 0;
+  }
 }
 .footer__logo-adalab {
-    width: rem(103);
-    height: rem(48);
-    margin: rem(20);
+  width: rem(103);
+  // height: rem(48);
+  // margin: rem(11);
 }
 
 .page-card .page__footer .footer__logo-adalab {
-    height: rem(40);
+  height: rem(40);
 }
