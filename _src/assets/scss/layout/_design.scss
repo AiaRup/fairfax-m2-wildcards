@@ -59,81 +59,25 @@
 
 .design__colors-list {
     list-style: none;
-    .colors-list-element:last-child {
-        padding-bottom: rem(0);
-    }
-}
-
-.rectangle {
-    width: 30px;
-    height: 25px;
-}
-.rectangle-1 {
-    background-color: $color-gBlue;
-}
-.rectangle-2 {
-    background-color: $color-dBlue;
-}
-.rectangle-3 {
-    background-color: $color-green;
-}
-.rectangle-4 {
-    background-color: #420101;
-}
-.rectangle-5 {
-    background-color: #bd1010;
-}
-.rectangle-6 {
-    background-color: #e95626;
-}
-.rectangle-7 {
-    background-color: #3e5b65;
-}
-.rectangle-8 {
-    background-color: #dfe5eb;
-}
-.rectangle-9 {
-    background-color: #a0c0cf;
 }
 
 .palettecolor {
     display: flex;
+    list-style: none;
     .rectangle:first-child {
         margin-left: rem(10);
     }
 }
 
-.colors-list-element {
-    padding-bottom: rem(20);
+.rectangle {
+    width: rem(30);
+    height: 0;
+    padding-top: rem(25);
+    overflow: hidden;
 }
 
-.section1 {
-    
-}
-
-#selection1 {
-    position: absolute;
-    left: rem(184);
-    top: rem(84);
-    width: rem(17);
-    height: rem(17);
-    transition:0.2s ease;
-}
-
-#selection2 {
-    position: absolute;
-    left: rem(184);
-    top: rem(129);
-    width: rem(17);
-    height: rem(17);
-    transition:0.2s ease;
-}
-
-#selection3 {
-    position: absolute;
-    left: rem(184);
-    top: rem(174);
-    width: rem(17);
-    height: rem(17);
-    transition:0.2s ease;
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20)
 }
