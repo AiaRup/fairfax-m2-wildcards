@@ -1,6 +1,9 @@
 .design__main {
     padding: rem(30) rem(20);
     border-bottom: rem(1) solid #d8d8d8;
+    @include mq($bp_tablet) {
+        padding : rem(30) rem(0);
+      }
 }
 
 .design__title-wrapper {
@@ -61,7 +64,11 @@
     list-style: none;
 }
 
-.palettecolor {
+.palettecolors {
+    border: rem(0);
+}
+
+.palettecolor-list {
     display: flex;
     list-style: none;
     .rectangle:first-child {
