@@ -9,7 +9,6 @@
 
   .wrapper {
     @include mq($bp-tablet) {
-      // margin: 0 rem(40);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -30,12 +29,12 @@
   margin-bottom: rem(11);
   @include mq($bp-tablet) {
     margin-top: rem(11);
+    text-align: left;
   }
 }
 .footer__logo-adalab {
   width: rem(103);
 }
-
 .page-card .page__footer .footer__logo-adalab {
   height: rem(40);
 }
