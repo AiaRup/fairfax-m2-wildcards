@@ -1,3 +1,7 @@
+.page__header {
+  background: $color-back;
+}
+
 .header__logo {
   background: $color-back;
   display: flex;
@@ -14,20 +18,16 @@
   overflow: hidden;
   padding-top: rem(95);
   width: rem(250);
-  // height: rem(63);
-  // margin-top: rem(95);
   @include mq($bp-tablet) {
     width: rem(420);
-    // height: rem(105);
   }
 }
-//CREATE CARD HEADER STYLE
-//I don't know how to open this page
-.page-card .page__header .wrapper {
-  margin: 0 rem(30);
-  @include mq($bp-tablet) {
-    margin: 0 rem(40);
-  }
+
+.header__link {
+}
+
+.page-card .page__header {
+  background: $color-white;
 }
 .page-card .page__header .header__logo {
   background: $color-white;
@@ -43,6 +43,5 @@
 .page-card .page__header .header__logo-img {
   width: rem(201);
   height: rem(50);
-  // margin-top: rem(395);
   margin-top: 0;
 }
