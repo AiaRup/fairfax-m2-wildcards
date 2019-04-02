@@ -1,11 +1,5 @@
 .main__preview {
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-  // background: radial-gradient(circle, rgba(107, 107, 107, 1) 0%, rgba(84, 88, 90, 1) 100%);
-
-  // background: rgb(249, 244, 220);
-  // background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
-  // background: radial-gradient(circle, rgba(249, 244, 220, 1) 49%, rgba(162, 222, 175, 1) 100%);
-
   padding: rem(35) 0 rem(40);
   min-height: rem(460);
   display: flex;
@@ -14,9 +8,7 @@
   align-items: center;
   @include mq($bp_tablet) {
     border-radius: rem(6);
-
     margin: rem(22) 0;
-    // padding: rem(173) 0 rem(260);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,17 +16,6 @@
   }
 }
 
-// .page-card__wrapper {
-//   width: fit-content;
-//   height: fit-content;
-//   position: relative;
-//   margin: 0 auto;
-//   // padding-top: rem(30);
-//   @include mq($bp_tablet) {
-//     margin: 0;
-//     padding-top: 0;
-//   }
-// }
 .preview__button {
   position: absolute;
   left: 0;
@@ -47,7 +28,6 @@
   border: rem(1) solid $color-white;
   background-color: transparent;
   text-transform: uppercase;
-  // margin-top: rem(20);
   color: $color-darkGrey;
   padding: rem(5) rem(10);
   cursor: pointer;
@@ -78,7 +58,6 @@
     line-height: 1.11;
     color: $color-gBlue;
   }
-
   .card__job {
     margin-left: rem(15);
     font-family: $montse;
