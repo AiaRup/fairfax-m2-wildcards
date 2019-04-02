@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: $defaultFontSize;
+  font-size: rem($defaultFontSize);
 }
 
 body {
@@ -22,4 +22,3 @@ body {
     padding: 0 rem(40);
   }
 }
-

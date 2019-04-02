@@ -21,15 +21,7 @@
 }
 
 .design__title-text {
-  font-family: $openSans;
-  font-size: rem(18);
-  color: #54585a;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-transform: uppercase;
+  @include titleStyle;
 }
 
 .design__button {

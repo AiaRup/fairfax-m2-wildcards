@@ -1,5 +1,7 @@
 .main__preview {
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  // background: radial-gradient(circle, rgba(107, 107, 107, 1) 0%, rgba(84, 88, 90, 1) 100%);
+
   // background: rgb(249, 244, 220);
   // background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
   // background: radial-gradient(circle, rgba(249, 244, 220, 1) 49%, rgba(162, 222, 175, 1) 100%);
@@ -11,6 +13,8 @@
   justify-content: center;
   align-items: center;
   @include mq($bp_tablet) {
+    border-radius: rem(6);
+
     margin: rem(22) 0;
     // padding: rem(173) 0 rem(260);
     display: flex;

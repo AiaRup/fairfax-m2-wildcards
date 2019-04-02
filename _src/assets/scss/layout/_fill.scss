@@ -21,14 +21,7 @@
     color: $color-orange;
   }
   .title__fill {
-    color: $color-darkGrey;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    font-size: rem(18);
+    @include titleStyle;
   }
 }
 
@@ -84,6 +77,7 @@
     border-radius: rem(3);
     padding: rem(4) rem(22) rem(6);
     box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
+    cursor: pointer;
   }
   .fill__preview-little {
     width: 30px;

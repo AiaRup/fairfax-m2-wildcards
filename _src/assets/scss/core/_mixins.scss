@@ -3,3 +3,15 @@
     @content;
   }
 }
+
+@mixin titleStyle {
+  font-family: $openSans;
+  font-size: rem(18);
+  color: $color-darkGrey;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
