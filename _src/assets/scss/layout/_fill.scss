@@ -20,7 +20,7 @@
 .title__fill {
     margin: 0;
     padding: 0 0 25px 10px; 
-    color: #54585a;
+    color: $color-darkGrey;
     text-transform: uppercase;
 }
 
@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0; 
     padding-top: 5px;
-    color: #54585a;
+    color: $color-darkGrey;
 }
 
 // FORM
@@ -44,19 +44,11 @@
 }
 
 .label {
-    display: block;
-    color: $color-gBlue;
-    padding-bottom: 5px;
+    @include label;
 }
 
 .field {
-    margin: 0;
-    width: 100%;
-    height: 30px;
-    padding-left: 10px;
-    display: block;
-    border: 1px solid $color-green;
-    color: #c5c5c5;
+    @include input;
 }
 
 // ADD IMAGE
@@ -79,7 +71,7 @@
     width: 140px;
     height: 30px;
     background-color: $color-orange;
-    color: white;
+    color: $color-white;
     border: none;
     border-radius: 3px; 
     padding: 4px 22px 6px 22px; 
@@ -90,5 +82,5 @@
     width: 30px; 
     height: 30px;
     margin-left: 20px;
-    border: 1px solid #a2deaf;
+    border: 1px solid $color-green;
 }

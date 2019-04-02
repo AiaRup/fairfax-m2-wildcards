@@ -1,0 +1,16 @@
+@mixin input {
+    // input style
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    display: block;
+    border: 1px solid $color-green;
+    color: #c5c5c5;
+}
+
+@mixin label {
+    display: block;
+    color: $color-gBlue;
+    padding-bottom: 5px;
+}
