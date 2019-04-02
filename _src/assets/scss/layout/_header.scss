@@ -1,7 +1,6 @@
 .page__header {
   background: $color-back;
 }
-
 .header__logo {
   background: $color-back;
   display: flex;
@@ -22,10 +21,6 @@
     width: rem(420);
   }
 }
-
-.header__link {
-}
-
 .page-card .page__header {
   background: $color-white;
 }
