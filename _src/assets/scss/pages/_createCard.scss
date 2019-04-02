@@ -1,10 +1,18 @@
 .page__main-card {
-  background-image: linear-gradient(to bottom, #f5f5f5, $color-white);
+  background-image: linear-gradient(to bottom, $color-back, $color-white);
+}
+
+.main-card__container {
   @include mq($bp_tablet) {
     display: grid;
     grid-gap: rem(30);
     grid-template-columns: rem(330) 1fr;
     padding: 0 rem(40);
+  }
+  @include mq($bp_desktop) {
+    max-width: rem(945);
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
