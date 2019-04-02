@@ -38,16 +38,15 @@
     font-size: 14px; 
 }
 
+.fill__field {
+    margin-right: 0; 
+    padding-bottom: 20px; 
+}
+
 .label {
     display: block;
     color: $color-gBlue;
     padding-bottom: 5px;
-}
-
-
-.fill__field {
-    margin-right: 0; 
-    padding-bottom: 20px; 
 }
 
 .field {
@@ -60,11 +59,23 @@
     color: #c5c5c5;
 }
 
-.add__img {
+// ADD IMAGE
+
+.add__img-container {
     display: flex;
+    position: relative;
+}
+
+.add__img-input {
+    visibility: hidden;
+    width: 140px;
+    height: 30px;
 }
 
 .fill__button {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 140px;
     height: 30px;
     background-color: $color-orange;
