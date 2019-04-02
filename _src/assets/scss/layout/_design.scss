@@ -1,6 +1,6 @@
 .design__main {
-  padding-bottom: rem(30);
-  border-bottom: rem(1) solid #d8d8d8;
+    padding-bottom: rem(30);
+    border-bottom: rem(1) solid $color-border;
 }
 
 .design__title-wrapper {
@@ -21,16 +21,24 @@
 }
 
 .design__title-text {
-  @include titleStyle;
+    font-family: $openSans;
+    font-size: rem(18);
+    color: $color-darkGrey;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
 }
 
 .design__button {
-  width: rem(16);
-  height: rem(18);
-  font-size: rem(18);
-  color: #54585a;
-  background-color: transparent;
-  border: none;
+    width: rem(16);
+    height: rem(18);
+    font-size: rem(18);
+    color: $color-darkGrey;
+    background-color: transparent;
+    border: none;
 }
 
 .design__colors {
@@ -41,7 +49,7 @@
 .design__colors-title {
   font-family: $openSans;
   font-size: rem(14);
-  color: #54585a;
+  color: $color-darkGrey;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
