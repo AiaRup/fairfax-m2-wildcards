@@ -1,19 +1,28 @@
 // TITLE FILL
 
+.fill__container {
+  padding: rem(13) 0 rem(30);
+  border-bottom: rem(1) solid $color-border;
+}
+
 .fill__container-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 20px;
+  align-items: center;
+  // padding: 0 20px;
+  margin-bottom: rem(25);
 }
 
 .title__container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.fa-keyboard {
-  font-size: 32px;
+.fill__icon {
+  padding-right: 0.625rem;
+  font-size: rem(18);
   color: $color-orange;
 }
 
@@ -25,7 +34,7 @@
   // font-family: $openSans;
 
   // font-size: rem(18);
-  margin-left: rem(3);
+  // margin-left: rem(10);
   color: $color-darkGrey;
   font-weight: 600;
   font-style: normal;
@@ -33,13 +42,14 @@
   line-height: normal;
   letter-spacing: normal;
   text-transform: uppercase;
+  font-size: rem(18);
 }
 
 .button__fill {
   width: rem(16);
   height: rem(18);
   font-size: rem(18);
-  color: #54585a;
+  color: $color-darkGrey;
   background-color: transparent;
   border: none;
 }
@@ -47,13 +57,16 @@
 // FORM
 
 .fill__container-form {
-  padding: 0 20px;
-  font-size: 14px;
+  // padding: 0 20px;
+  font-size: rem(14);
 }
 
 .fill__field {
   margin-right: 0;
-  padding-bottom: 20px;
+  padding-bottom: rem(20);
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .label {
@@ -73,20 +86,20 @@
 
 .add__img-input {
   visibility: hidden;
-  width: 140px;
-  height: 30px;
+  width: rem(140);
+  height: rem(30);
 }
 
 .fill__button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 140px;
-  height: 30px;
+  width: rem(140);
+  height: rem(30);
   background-color: $color-orange;
   color: $color-white;
   border: none;
-  border-radius: 3px;
+  border-radius: rem(3);
   padding: 4px 22px 6px 22px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
