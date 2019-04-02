@@ -1,0 +1,86 @@
+// TITLE FILL
+
+.fill__container-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px; 
+}
+
+.title__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-keyboard {
+    font-size: 32px;
+    color: $color-orange;
+}
+
+.title__fill {
+    margin: 0;
+    padding: 0 0 25px 10px; 
+    color: $color-darkGrey;
+    text-transform: uppercase;
+}
+
+.fa-chevron-up {
+    margin: 0;
+    padding: 0; 
+    padding-top: 5px;
+    color: $color-darkGrey;
+}
+
+// FORM
+
+.fill__container-form {
+    padding: 0 20px; 
+    font-size: 14px; 
+}
+
+.fill__field {
+    margin-right: 0; 
+    padding-bottom: 20px; 
+}
+
+.label {
+    @include label;
+}
+
+.field {
+    @include input;
+}
+
+// ADD IMAGE
+
+.add__img-container {
+    display: flex;
+    position: relative;
+}
+
+.add__img-input {
+    visibility: hidden;
+    width: 140px;
+    height: 30px;
+}
+
+.fill__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 30px;
+    background-color: $color-orange;
+    color: $color-white;
+    border: none;
+    border-radius: 3px; 
+    padding: 4px 22px 6px 22px; 
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.fill__preview-little {
+    width: 30px; 
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid $color-green;
+}
