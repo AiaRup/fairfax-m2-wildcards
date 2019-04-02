@@ -1,88 +1,99 @@
 // TITLE FILL
 
 .fill__container-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .title__container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .fa-keyboard {
-    font-size: 32px;
-    color: $color-orange;
+  font-size: 32px;
+  color: $color-orange;
 }
 
 .title__fill {
-    margin: 0;
-    padding: 0 0 25px 10px; 
-    color: $color-darkGrey;
-    text-transform: uppercase;
+  // margin: 0;
+  // padding: 0 0 25px 10px;
+  // color: $color-darkGrey;
+  // text-transform: uppercase;
+  // font-family: $openSans;
+
+  // font-size: rem(18);
+  margin-left: rem(3);
+  color: $color-darkGrey;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .button__fill {
-    width: rem(16);
-    height: rem(18);
-    font-size: rem(18);
-    color: #54585a;
-    background-color: transparent;
-    border: none;
+  width: rem(16);
+  height: rem(18);
+  font-size: rem(18);
+  color: #54585a;
+  background-color: transparent;
+  border: none;
 }
 
 // FORM
 
 .fill__container-form {
-    padding: 0 20px; 
-    font-size: 14px; 
+  padding: 0 20px;
+  font-size: 14px;
 }
 
 .fill__field {
-    margin-right: 0; 
-    padding-bottom: 20px; 
+  margin-right: 0;
+  padding-bottom: 20px;
 }
 
 .label {
-    @include label;
+  @include label;
 }
 
 .field {
-    @include input;
+  @include input;
 }
 
 // ADD IMAGE
 
 .add__img-container {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .add__img-input {
-    visibility: hidden;
-    width: 140px;
-    height: 30px;
+  visibility: hidden;
+  width: 140px;
+  height: 30px;
 }
 
 .fill__button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 140px;
-    height: 30px;
-    background-color: $color-orange;
-    color: $color-white;
-    border: none;
-    border-radius: 3px; 
-    padding: 4px 22px 6px 22px; 
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 30px;
+  background-color: $color-orange;
+  color: $color-white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 22px 6px 22px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
 .fill__preview-little {
-    width: 30px; 
-    height: 30px;
-    margin-left: 20px;
-    border: 1px solid $color-green;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  border: 1px solid $color-green;
 }

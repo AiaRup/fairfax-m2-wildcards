@@ -1,19 +1,40 @@
 .main__preview {
-  background: rgb(249, 244, 220);
-  background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  // background: rgb(249, 244, 220);
+  // background: radial-gradient(circle, rgba(249, 244, 220, 1) 0%, rgba(225, 115, 52, 1) 100%);
+  // background: radial-gradient(circle, rgba(249, 244, 220, 1) 49%, rgba(162, 222, 175, 1) 100%);
+
   padding: rem(35) 0 rem(40);
+  min-height: rem(460);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @include mq($bp_tablet) {
     margin: rem(22) 0;
-    padding: rem(173) 0 rem(260);
+    // padding: rem(173) 0 rem(260);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.page-card__wrapper {
-  width: 100%;
-  max-width: rem(240);
-  margin: 0 auto;
-}
+// .page-card__wrapper {
+//   width: fit-content;
+//   height: fit-content;
+//   position: relative;
+//   margin: 0 auto;
+//   // padding-top: rem(30);
+//   @include mq($bp_tablet) {
+//     margin: 0;
+//     padding-top: 0;
+//   }
+// }
 .preview__button {
+  position: absolute;
+  left: 0;
+  top: rem(-50);
   height: rem(30);
   font-family: $openSans;
   font-size: rem(12);
@@ -22,7 +43,7 @@
   border: rem(1) solid $color-white;
   background-color: transparent;
   text-transform: uppercase;
-  margin-bottom: rem(20);
+  // margin-top: rem(20);
   color: $color-darkGrey;
   padding: rem(5) rem(10);
   cursor: pointer;
@@ -32,11 +53,13 @@
 }
 
 .preview__card {
-  min-width: rem(240);
+  position: relative;
+  width: rem(240);
   border-radius: rem(2);
   box-shadow: 0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.2), 0 rem(1) rem(3) 0 rgba(0, 0, 0, 0.35);
   background-color: $color-white;
   padding: rem(21) 0 rem(12);
+  margin-top: rem(50);
 }
 
 .card__header {
@@ -60,6 +83,13 @@
     color: $color-darkGrey;
     text-transform: initial;
   }
+}
+
+.card__image {
+  width: rem(240);
+  height: rem(200);
+  background: url('https://via.placeholder.com/240X200') center center no-repeat;
+  background-size: cover;
 }
 
 .card__links-list {
