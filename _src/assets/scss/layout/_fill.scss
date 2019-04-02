@@ -24,11 +24,13 @@
     text-transform: uppercase;
 }
 
-.fa-chevron-up {
-    margin: 0;
-    padding: 0; 
-    padding-top: 5px;
-    color: $color-darkGrey;
+.button__fill {
+    width: rem(16);
+    height: rem(18);
+    font-size: rem(18);
+    color: #54585a;
+    background-color: transparent;
+    border: none;
 }
 
 // FORM

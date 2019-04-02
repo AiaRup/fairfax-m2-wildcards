@@ -1,11 +1,11 @@
-// Components
-@import 'components/button';
-@import 'components/form';
-
 // Core
 @import 'core/variables';
 @import 'core/functions';
 @import 'core/mixins';
+
+// Components
+@import 'components/button';
+@import 'components/form';
 
 // Layout
 @import 'layout/general';

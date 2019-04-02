@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
 }
 
 .share-icon {
@@ -49,6 +50,27 @@
     border: none;
     border-radius: rem(12);
     box-shadow: 0 rem(1) rem(6) 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto rem(30);
+    &:visited {
+        background-color: #d5d5d5;
+    }
+}
+.card-icon {
+    font-family: $openSans;
+    font-size: rem(18);
+    color: $color-white;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-right: rem(10);
+}
+.share__button-text {
     font-family: $openSans;
     font-size: rem(18);
     color: $color-white;
@@ -58,14 +80,6 @@
     line-height: normal;
     letter-spacing: normal;
     text-transform: uppercase;
-    align-self: center;
-    margin-bottom: rem(30);
-    &:visited {
-        background-color: #d5d5d5;
-    }
-    .card-icon {
-        margin-right: rem(10);
-    }
 }
 
 .share__hidden {
@@ -88,27 +102,6 @@
     text-align: center;
 }
 
-.share__button-twitter {
-    width: rem(180);
-    height: rem(30);
-    background-color: #00a0f5;
-    border: none;
-    border-radius: rem(3);
-    box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
-    font-family: $openSans;
-    font-size: rem(14);
-    color: $color-white;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    margin-top: rem(10);
-    .twitter-icon {
-        margin-right: rem(10);
-    }
-}
-
 .share__link {
     font-family: $openSans;
     font-size: rem(12);
@@ -119,4 +112,29 @@
     line-height: normal;
     letter-spacing: normal;
     text-decoration: none;
+}
+
+.share__button-twitter {
+    width: rem(180);
+    height: rem(30);
+    background-color: #00a0f5;
+    border: none;
+    border-radius: rem(3);
+    box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
+    text-decoration: none;
+    font-family: $openSans;
+    font-size: rem(14);
+    color: $color-white;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    margin-top: rem(10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .twitter-icon {
+        margin-right: rem(10);
+    }
 }
