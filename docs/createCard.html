@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Awesome profile-cards</title>
+        <link rel="icon" href="awesome-icon.ico"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Open+Sans:400,600"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    
+    <body>
+        <div class="page-card">
+            <header class="page__header">
+                <div class="wrapper">
+                    <div class="header__logo"> <a href="index.html" class="header__link"><h1 class="header__logo-img">Awesome profile cards</h1></a>
+
+                    </div>
+                </div>
+            </header>
+            <main class="page__main-card">
+                <div class="main-card__container">
+                    <section class="main__preview">
+                        <div class="preview__card">
+                            <button class="preview__button"> <i class="far fa-trash-alt trash-icon"></i>
+reset</button>
+                            <div class="card__header">
+                                 <h2 class="card__name">nombre apellido</h2>
+
+                                <p class="card__job">Front-end developer</p>
+                            </div>
+                            <div class="card__image"></div>
+                            <ul class="card__links-list">
+                                <li class="card__link-sm"><i class="fas fa-mobile-alt"></i>
+
+                                </li>
+                                <li class="card__link-sm"><i class="far fa-envelope"></i>
+
+                                </li>
+                                <li class="card__link-sm"><i class="fab fa-linkedin-in"></i>
+
+                                </li>
+                                <li class="card__link-sm"><i class="fab fa-github-alt"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <form class="main__settings" action="" method="POST">
+                        <fieldset class="design__main">
+                            <legend class="fieldset__legend">diseña</legend>
+                            <div class="design__title-wrapper">
+                                <div class="design__title"> <i class="far fa-object-ungroup design-icon"></i>
+
+                                     <h3 class="design__title-text">diseña</h3>
+
+                                </div>
+                                <button class="design__button"><i class="fas fa-chevron-up"></i>
+
+                                </button>
+                            </div>
+                            <div class="design__colors section__collapse">
+                                <p class="design__colors-title">colores</p>
+                                <ul class="design__colors-list">
+                                    <li class="colors-list-element">
+                                        <label for="selection1" class="design__label">
+                                            <input id="selection1" type="radio" value="paletteblue" name="palettecolors"
+                                            class="palettecolors" />
+                                            <ul class="palettecolor-list">
+                                                <li class="rectangle" style="background-color:#114e4e">Dark cyan</li>
+                                                <li class="rectangle" style="background-color:#438792">Dirty blue</li>
+                                                <li class="rectangle" style="background-color:#a2deaf">Hospital green</li>
+                                            </ul>
+                                        </label>
+                                    </li>
+                                    <li class="colors-list-element">
+                                        <label for="selection2" class="design__label">
+                                            <input id="selection2" type="radio" value="palettered" name="palettecolors"
+                                            class="palettecolors" />
+                                            <ul class="palettecolor-list">
+                                                <li class="rectangle" style="background-color:#420101">Chocolatte</li>
+                                                <li class="rectangle" style="background-color:#bd1010">Thunderbird</li>
+                                                <li class="rectangle" style="background-color:#e95626">Flamingo orange</li>
+                                            </ul>
+                                        </label>
+                                    </li>
+                                    <li class="colors-list-element">
+                                        <label for="selection3" class="design__label">
+                                            <input id="selection3" type="radio" value="palettegrey" name="palettecolors"
+                                            class="palettecolors" />
+                                            <ul class="palettecolor-list">
+                                                <li class="rectangle" style="background-color:#3e5b65">Fiord</li>
+                                                <li class="rectangle" style="background-color:#dfe5eb">Mystic</li>
+                                                <li class="rectangle" style="background-color:#a0c0cf">Rock blue</li>
+                                            </ul>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <fieldset class="fill__container">
+                            <legend class="fieldset__legend">rellena</legend>
+                            <div class="fill__container-title">
+                                <div class="title__fill-container"> <i class="far fa-keyboard fill__icon"></i>
+
+                                     <h3 class="title__fill">rellena</h3>
+
+                                </div>
+                                <button class="button__fill"><i class="fas fa-chevron-down"></i>
+
+                                </button>
+                            </div>
+                            <div class="fill__container-form">
+                                <div class="fill__field-container">
+                                    <label for="name" class="fill__label">nombre completo</label>
+                                    <input id="name" class="fill__field" type="text"
+                                    name="completeName" placeholder="Ej: Sally Jill" />
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="job" class="fill__label">puesto</label>
+                                    <input id="job" class="fill__field" type="text" name="job"
+                                    placeholder="Ej: Font-end unicorn" />
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="add__img" class="fill__label">imagen de perfil</label>
+                                    <div class="add__img-container">
+                                        <input id="add__img" class="fill__field add__img-input" type="text" name="add__img"
+                                        />
+                                        <button type="button" class="fill__button">añandir imagen</button>
+                                        <div class="fill__preview-little"></div>
+                                    </div>
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="email" class="fill__label">email</label>
+                                    <input id="email" class="fill__field" type="email" name="email"
+                                    placeholder="Ej: sally-hill@gmail.com" />
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="phone" class="fill__label">teléfono</label>
+                                    <input id="phone" class="fill__field" type="tel" name="phoneNumber"
+                                    placeholder="Ej: 555-55-55-55" />
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="linkedin" class="fill__label">linkedin</label>
+                                    <input id="linkedin" class="fill__field" type="text" name="linkedin"
+                                    placeholder="Ej: linkedin.com/in/sally.hill" />
+                                </div>
+                                <div class="fill__field-container">
+                                    <label for="github" class="fill__label">github</label>
+                                    <input id="github" class="fill__field" type="text" name="github"
+                                    placeholder="Ej: @sally-hill" />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="share__main">
+                            <legend class="fieldset__legend">comparte</legend>
+                            <div class="share__title-wrapper">
+                                <div class="share__title"> <i class="fas fa-share-alt share-icon"></i>
+
+                                     <h3 class="share__title-text">comparte</h3>
+
+                                </div>
+                                <button class="share__button-arrow"><i class="fas fa-chevron-down"></i>
+
+                                </button>
+                            </div>
+                            <div class="section__collapse">
+                                <div>
+                                    <button type="submit" class="share__button-create"><i class="far fa-address-card card-icon"></i>Crear tarjeta</button>
+                                </div>
+                                <div class="share__hidden">
+                                    <p class="share__text">La tarjeta ha sido creada:</p> <a href="#" class="share__link">https:....</a>
+
+                                    <a
+                                    href="#" class="share__button-twitter"><i class="fab fa-twitter twitter-icon"></i>Compartir en twitter</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+            <footer class="page__footer">
+                <div class="wrapper">
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-name">Awesome profile-cards ©2019</p>
+                        <p class="footer__wildcards">.Wildcards</p>
+                    </div>
+                    <div class="footer__logo"> <a href="https://adalab.es/" target="_blank"><img class="footer__logo-adalab" src="../../assets/images/adalab-logo.png" alt="adalab logo"/></a>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+
+</html>

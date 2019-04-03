@@ -5,9 +5,10 @@
   background: $color-back;
   display: flex;
   justify-content: center;
-  padding-top: rem(95);
+  align-items: center;
+  // padding-top: rem(95);
   @include mq($bp-tablet) {
-    padding-top: rem(350);
+    // padding-top: rem(350);
   }
 }
 .header__logo-img {

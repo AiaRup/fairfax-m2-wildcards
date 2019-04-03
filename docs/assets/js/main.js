@@ -1,0 +1,1 @@
+"use strict";console.log(">> Ready :)"),console.log("collapse"),console.log("color"),console.log("preview");

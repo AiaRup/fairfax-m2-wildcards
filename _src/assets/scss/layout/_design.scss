@@ -1,6 +1,6 @@
 .design__main {
-    padding-bottom: rem(30);
-    border-bottom: rem(1) solid $color-border;
+  padding-bottom: rem(30);
+  border-bottom: rem(1) solid $color-border;
 }
 
 .design__title-wrapper {
@@ -21,24 +21,24 @@
 }
 
 .design__title-text {
-    font-family: $openSans;
-    font-size: rem(18);
-    color: $color-darkGrey;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-transform: uppercase;
+  font-family: $openSans;
+  font-size: rem(18);
+  color: $color-darkGrey;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .design__button {
-    width: rem(16);
-    height: rem(18);
-    font-size: rem(18);
-    color: $color-darkGrey;
-    background-color: transparent;
-    border: none;
+  width: rem(16);
+  height: rem(18);
+  font-size: rem(18);
+  color: $color-darkGrey;
+  background-color: transparent;
+  border: none;
 }
 
 .design__colors {
@@ -82,7 +82,7 @@
   overflow: hidden;
 }
 
-label {
+.design__label {
   display: flex;
   align-items: center;
   margin-bottom: rem(20);
