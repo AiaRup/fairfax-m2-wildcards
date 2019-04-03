@@ -25,6 +25,11 @@
   }
 }
 
-fieldset {
+.fieldset__legend {
+  height: 0;
+  overflow: hidden;
+}
+
+.form__fieldset {
   border: none;
 }
