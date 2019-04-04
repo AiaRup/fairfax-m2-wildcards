@@ -48,7 +48,6 @@
 
 .card__header {
   margin-bottom: rem(10);
-  border-left: rem(5) solid $color-green;
   padding-right: rem(20);
 
   .card__name {
@@ -58,18 +57,15 @@
     font-size: rem(18);
     font-weight: bold;
     line-height: 1.11;
-    color: $color-gBlue;
-    // white-space: nowrap;
-    // overflow: visible;
-    // text-overflow: ellipsis;
+    word-break: break-all;
   }
   .card__job {
     margin-left: rem(15);
     font-family: $montse;
     font-size: rem(16);
     line-height: 1.25;
-    color: $color-darkGrey;
     text-transform: initial;
+    word-break: break-all;
   }
 }
 
@@ -93,17 +89,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-gBlue;
   font-size: rem(18);
   width: rem(32);
   height: rem(32);
   border-radius: rem(16);
-  border: rem(2) solid $color-green;
 }
 .social__link {
-  color: $color-gBlue;
   text-decoration: none;
 }
 .hidden {
   display: none;
+}
+
+.theme1 {
+  .card__header {
+    border-left: rem(5) solid $color-green;
+  }
+  .card__name {
+    color: $color-gBlue;
+  }
+  .card__job {
+    color: $color-dBlue;
+  }
+  .card__link-sm {
+    color: $color-gBlue;
+    border: rem(2) solid $color-green;
+  }
+  .social__link{
+    color: $color-gBlue;
+  }
+}
+
+.theme2 {
+  .card__header {
+    border-left: rem(5) solid $color-dOrange;
+  }
+  .card__name {
+    color: $color-dRed;
+  }
+  .card__job {
+    color: $color-red;
+  }
+  .card__link-sm {
+    color: $color-dRed;
+    border: rem(2) solid $color-dOrange;
+  }
+  .social__link{
+    color: $color-dRed;
+  }
+}
+
+.theme3 {
+  .card__header {
+    border-left: rem(5) solid $color-blueGrey;
+  }
+  .card__name {
+    color: $color-dGrey;
+  }
+  .card__job {
+    color: $color-lGrey;
+  }
+  .card__link-sm {
+    color: $color-dGrey;
+    border: rem(2) solid $color-blueGrey;
+  }
+  .social__link{
+    color: $color-dGrey;
+  }
 }
