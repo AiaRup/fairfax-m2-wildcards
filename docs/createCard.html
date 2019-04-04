@@ -27,28 +27,29 @@
                 </div>
             </header>
             <main class="page__main-card">
-                <div class="main-card__container">
+                <!-- <div class="main-card__container"> -->
+                <div class="wrapper">
                     <section class="main__preview">
-                        <div class="preview__card">
+                        <div class="preview__card theme1">
                             <button class="preview__button"> <i class="far fa-trash-alt trash-icon"></i>
 reset</button>
-                            <div class="card__header">
-                                 <h2 class="card__name">nombre apellido</h2>
+                            <div class="card__header ">
+                                 <h2 class="card__name ">nombre apellido</h2>
 
                                 <p class="card__job">Front-end developer</p>
                             </div>
                             <div class="card__image"></div>
                             <ul class="card__links-list">
-                                <li class="card__link-sm"><i class="fas fa-mobile-alt"></i>
+                                <li class="card__link-sm sm__email hidden"><a class="email__link social__link" href=""><i class="far fa-envelope"></i></a>
 
                                 </li>
-                                <li class="card__link-sm"><i class="far fa-envelope"></i>
+                                <li class="card__link-sm sm__mobile hidden"><a class="mobile__link social__link" href=""><i class="fas fa-mobile-alt"></i></a>
 
                                 </li>
-                                <li class="card__link-sm"><i class="fab fa-linkedin-in"></i>
+                                <li class="card__link-sm sm__linkedin hidden"><a class="linkedin__link social__link" href=""><i class="fab fa-linkedin-in"></i></a>
 
                                 </li>
-                                <li class="card__link-sm"><i class="fab fa-github-alt"></i>
+                                <li class="card__link-sm sm__github hidden"><a class="github__link social__link" href=""><i class="fab fa-github-alt"></i></a>
 
                                 </li>
                             </ul>
@@ -73,7 +74,7 @@ reset</button>
                                     <li class="colors-list-element">
                                         <label for="selection1" class="design__label">
                                             <input id="selection1" type="radio" value="paletteblue" name="palettecolors"
-                                            class="palettecolors" />
+                                            class="palettecolors theme1" checked/>
                                             <ul class="palettecolor-list">
                                                 <li class="rectangle" style="background-color:#114e4e">Dark cyan</li>
                                                 <li class="rectangle" style="background-color:#438792">Dirty blue</li>
@@ -84,7 +85,7 @@ reset</button>
                                     <li class="colors-list-element">
                                         <label for="selection2" class="design__label">
                                             <input id="selection2" type="radio" value="palettered" name="palettecolors"
-                                            class="palettecolors" />
+                                            class="palettecolors theme2" />
                                             <ul class="palettecolor-list">
                                                 <li class="rectangle" style="background-color:#420101">Chocolatte</li>
                                                 <li class="rectangle" style="background-color:#bd1010">Thunderbird</li>
@@ -95,7 +96,7 @@ reset</button>
                                     <li class="colors-list-element">
                                         <label for="selection3" class="design__label">
                                             <input id="selection3" type="radio" value="palettegrey" name="palettecolors"
-                                            class="palettecolors" />
+                                            class="palettecolors theme3" />
                                             <ul class="palettecolor-list">
                                                 <li class="rectangle" style="background-color:#3e5b65">Fiord</li>
                                                 <li class="rectangle" style="background-color:#dfe5eb">Mystic</li>
@@ -127,14 +128,14 @@ reset</button>
                                 <div class="fill__field-container">
                                     <label for="job" class="fill__label">puesto</label>
                                     <input id="job" class="fill__field" type="text" name="job"
-                                    placeholder="Ej: Font-end unicorn" />
+                                    placeholder="Ej: Front-end unicorn" />
                                 </div>
                                 <div class="fill__field-container">
                                     <label for="add__img" class="fill__label">imagen de perfil</label>
                                     <div class="add__img-container">
                                         <input id="add__img" class="fill__field add__img-input" type="text" name="add__img"
                                         />
-                                        <button type="button" class="fill__button">añandir imagen</button>
+                                        <button type="button" class="fill__button">añadir imagen</button>
                                         <div class="fill__preview-little"></div>
                                     </div>
                                 </div>
@@ -186,6 +187,7 @@ reset</button>
                         </fieldset>
                     </form>
                 </div>
+                <!-- </div> -->
             </main>
             <footer class="page__footer">
                 <div class="wrapper">
