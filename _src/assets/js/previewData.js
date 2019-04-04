@@ -44,10 +44,48 @@ function defaultJob() {
   function defaultLinkEmail() { 
     const value = email.value;
     if (value === '') {
-      linkEmail.href = `mailto:${value}`;
-    }
-    else {
       iconEmail.classList.add('hidden');
     }
-  }
+    else {
+      iconEmail.classList.remove('hidden');
+      linkEmail.href = `mailto:${value}`;
+    }
+  } 
   email.addEventListener('keyup', defaultLinkEmail);
+
+
+  function defaultLinkMobile() { 
+    const value = mobile.value;
+    if (value === '') {
+      iconMobile.classList.add('hidden');
+    }
+    else {
+      iconMobile.classList.remove('hidden');
+      linkMobile.href = `tel:${value}`;
+    }
+  } 
+  mobile.addEventListener('keyup', defaultLinkMobile);
+
+  function defaultLinkLinkedin() { 
+    const value = linkedin.value;
+    if (value === '') {
+      iconLinkedin.classList.add('hidden');
+    }
+    else {
+      iconLinkedin.classList.remove('hidden');
+      linkLinkedin.href = value;
+    }
+  } 
+  linkedin.addEventListener('keyup', defaultLinkLinkedin);
+
+  function defaultLinkGithub() { 
+    const value = github.value;
+    if (value === '') {
+      iconGit.classList.add('hidden');
+    }
+    else {
+      iconGit.classList.remove('hidden');
+      linkGit = value;
+    }
+  } 
+  github.addEventListener('keyup', defaultLinkGithub);
