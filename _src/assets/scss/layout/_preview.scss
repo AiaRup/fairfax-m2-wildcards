@@ -49,6 +49,7 @@
 .card__header {
   margin-bottom: rem(10);
   border-left: rem(5) solid $color-green;
+  padding-right: rem(9);
   .card__name {
     margin: 0 0 rem(4) rem(15);
     text-transform: capitalize;
