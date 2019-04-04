@@ -12,12 +12,12 @@ function changeColorPalette(class_to_add) {
     console.log('yasss');
 }
 
-selection1.addEventListener('Change', () => {
+selection1.addEventListener('change', () => {
     changeColorPalette('theme1');
 });
-selection2.addEventListener('Change', () => {
+selection2.addEventListener('change', () => {
     changeColorPalette('theme2');
 });
-selection3.addEventListener('Change', () => {
+selection3.addEventListener('change', () => {
     changeColorPalette('theme3');
 });
