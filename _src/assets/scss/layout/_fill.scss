@@ -1,4 +1,4 @@
-.fill__container {
+.fill__container.form__fieldset {
   padding: rem(10) 0 rem(30);
   border-bottom: rem(1) solid $color-border;
 }
@@ -34,10 +34,7 @@
   border: none;
 }
 
-// FORM
-
 .fill__container-form {
-  // padding: 0 20px;
   font-size: rem(14);
 }
 
@@ -55,8 +52,6 @@
   }
 }
 
-// ADD IMAGE
-
 .add__img-container {
   display: flex;
   position: relative;
@@ -65,6 +60,7 @@
     width: rem(140);
     height: rem(30);
   }
+
   .fill__button {
     position: absolute;
     top: 0;
@@ -79,10 +75,11 @@
     box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
     cursor: pointer;
   }
+
   .fill__preview-little {
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
+    width: rem(30);
+    height: rem(30);
+    margin-left: rem(20);
     border: 1px solid $color-green;
   }
 }

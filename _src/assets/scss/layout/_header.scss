@@ -6,11 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-top: rem(95);
-  @include mq($bp-tablet) {
-    // padding-top: rem(350);
-  }
 }
+
 .header__logo-img {
   background: url('../images/awesome-logo.svg') center center no-repeat;
   background-size: contain;
@@ -22,9 +19,11 @@
     width: rem(420);
   }
 }
+
 .page-card .page__header {
   background: $color-white;
 }
+
 .page-card .page__header .header__logo {
   background: $color-white;
   height: rem(111);
@@ -36,6 +35,7 @@
     justify-content: flex-start;
   }
 }
+
 .page-card .page__header .header__logo-img {
   width: rem(201);
   height: rem(50);

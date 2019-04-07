@@ -72,7 +72,7 @@
 .card__image {
   width: rem(240);
   height: rem(200);
-  background: url('https://via.placeholder.com/240X200') center center no-repeat;
+  background: url('../images/preview-image.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -94,9 +94,11 @@
   height: rem(32);
   border-radius: rem(16);
 }
+
 .social__link {
   text-decoration: none;
 }
+
 .hidden {
   display: none;
 }
@@ -115,7 +117,7 @@
     color: $color-gBlue;
     border: rem(2) solid $color-green;
   }
-  .social__link{
+  .social__link {
     color: $color-gBlue;
   }
 }
@@ -134,7 +136,7 @@
     color: $color-dRed;
     border: rem(2) solid $color-dOrange;
   }
-  .social__link{
+  .social__link {
     color: $color-dRed;
   }
 }
@@ -153,7 +155,7 @@
     color: $color-dGrey;
     border: rem(2) solid $color-blueGrey;
   }
-  .social__link{
+  .social__link {
     color: $color-dGrey;
   }
 }
