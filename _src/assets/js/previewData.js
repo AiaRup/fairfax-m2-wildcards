@@ -54,7 +54,7 @@ mobile.addEventListener('keyup', () => {
 });
 
 linkedin.addEventListener('keyup', () => {
-  changeLinkCard(iconLinkedin, linkLinkedin, linkedin, '');
+  changeLinkCard(iconLinkedin, linkLinkedin, linkedin, `https://www.linkedin.com/in/`);
 });
 
 github.addEventListener('keyup', () => {
