@@ -110,9 +110,18 @@
   @include mq($bp_tablet) {
     margin-top: rem(100);
   }
+  &:hover{
+    background-color: $color-green;
+    transition: 0.40s ease-in-out;
+    box-shadow: inset 0 0 0 2px $color-gBlue;
+    }
 }
 
 .main__landing-link {
   color: $color-white;
   text-decoration: none;
+  &:hover{
+    color:$color-gBlue;
+  }
 }
+

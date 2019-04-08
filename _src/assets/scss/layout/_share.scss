@@ -147,6 +147,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    transition: transform 0.5s;
+    transform: scale(1.05);
+  }
   .twitter-icon {
     margin-right: rem(10);
   }
