@@ -58,5 +58,5 @@ linkedin.addEventListener('keyup', () => {
 });
 
 github.addEventListener('keyup', () => {
-  changeLinkCard(iconGit, linkGit, github, '');
+  changeLinkCard(iconGit, linkGit, github, `https://github.com/`);
 });
