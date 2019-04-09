@@ -81,9 +81,22 @@
   &:visited {
     background-color: $color-button;
   }
+  &:hover {
+    top:1px;
+    box-shadow: 0 5px $color-dOrange;
+    position: relative;
+  }
+  &:active {
+    top:6px;
+    outline: none;
+    box-shadow: 0 0px $color-dOrange;
+    border:0;
+    position: relative;
+  }
   .card-icon {
     margin-right: rem(10);
   }
+  
 }
 
 .share__hidden {
