@@ -96,7 +96,6 @@
   .card-icon {
     margin-right: rem(10);
   }
-  
 }
 
 .share__hidden {
@@ -117,27 +116,6 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-}
-
-.share__button-twitter {
-  width: rem(180);
-  height: rem(30);
-  background-color: $color-blue;
-  border: none;
-  border-radius: rem(3);
-  box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
-  font-family: $openSans;
-  font-size: rem(14);
-  color: $color-white;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  margin-top: rem(10);
-  .twitter-icon {
-    margin-right: rem(10);
-  }
 }
 
 .share__button-twitter {
