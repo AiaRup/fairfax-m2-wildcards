@@ -72,7 +72,9 @@
 .card__image {
   width: rem(240);
   height: rem(200);
-  background: url('../images/preview-image.jpg') center center no-repeat;
+  background-image: url('../images/preview-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 

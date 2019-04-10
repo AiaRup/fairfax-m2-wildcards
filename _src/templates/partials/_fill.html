@@ -16,14 +16,16 @@
       <label for="job" class="fill__label">puesto</label>
       <input id="job" class="fill__field" type="text" name="job" placeholder="Ej: Front-end unicorn" />
     </div>
+<!-- CARGA DE IMAGEN -->
     <div class="fill__field-container">
       <label for="add__img" class="fill__label">imagen de perfil</label>
       <div class="add__img-container">
-        <input id="add__img" class="fill__field add__img-input" type="file" accept=".png, .jpg, .jpeg" name="add__img" />
-        <button type="button" class="fill__button">añadir imagen</button>
-        <div class="fill__preview-little"></div>
+        <button type="button" class="fill__button js__profile-trigger">añadir imagen</button>
+        <input id="add__img" class="fill__field add__img-input js__profile-upload-btn" type="file" accept=".png, .jpg, .jpeg" name="add__img" />
+        <div class="fill__preview-little js__profile-preview"></div>
       </div>
     </div>
+<!-- --------------- -->    
     <div class="fill__field-container">
       <label for="email" class="fill__label">email</label>
       <input id="email" class="fill__field" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
