@@ -87,6 +87,7 @@
     position: relative;
   }
   &:active {
+    background-color: $color-button;
     top:6px;
     outline: none;
     box-shadow: 0 0px $color-dOrange;
