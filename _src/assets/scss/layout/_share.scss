@@ -68,6 +68,19 @@
   &:visited {
     background-color: $color-button;
   }
+  &:hover {
+    top:1px;
+    box-shadow: 0 5px $color-dOrange;
+    position: relative;
+  }
+  &:active {
+    background-color: $color-button;
+    top:6px;
+    outline: none;
+    box-shadow: 0 0px $color-dOrange;
+    border:0;
+    position: relative;
+  }
   .card-icon {
     margin-right: rem(10);
   }
@@ -100,27 +113,6 @@
   border: none;
   border-radius: rem(3);
   box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
-  font-family: $openSans;
-  font-size: rem(14);
-  color: $color-white;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  margin-top: rem(10);
-  .twitter-icon {
-    margin-right: rem(10);
-  }
-}
-
-.share__button-twitter {
-  width: rem(180);
-  height: rem(30);
-  background-color: $color-blue;
-  border: none;
-  border-radius: rem(3);
-  box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
   text-decoration: none;
   font-family: $openSans;
   font-size: rem(14);
@@ -134,6 +126,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+  }
   .twitter-icon {
     margin-right: rem(10);
   }
