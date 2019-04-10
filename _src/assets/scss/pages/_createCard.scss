@@ -1,11 +1,25 @@
+.page-card {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+}
+
 .page__main-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-image: linear-gradient(to bottom, $color-back, $color-white);
   .wrapper {
-    padding: 0;
+    flex-grow: 1;
+    height: 100%;
     @include mq($bp_tablet) {
       display: grid;
       grid-gap: rem(30);
       grid-template-columns: rem(330) 1fr;
+      grid-template-rows: 100%;
       padding: 0 rem(40);
     }
   }
