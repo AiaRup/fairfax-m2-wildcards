@@ -16,7 +16,7 @@
     "dist": "docs/assets/css/"
   },
   "js": {
-    "src": ["_src/assets/js/main.js", "_src/assets/js/collapse.js", "_src/assets/js/colorPalette.js", "_src/assets/js/previewData.js"],
+    "src": ["_src/assets/js/main.js", "_src/assets/js/collapse.js", "_src/assets/js/colorPalette.js", "_src/assets/js/previewData.js", "_src/assets/js/reset.js"],
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"
   },
