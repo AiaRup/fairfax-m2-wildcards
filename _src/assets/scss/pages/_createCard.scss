@@ -11,6 +11,10 @@
   }
 }
 
+.section__collapse {
+  display: none;
+}
+
 .main__settings {
   padding: rem(30) rem(20);
   @include mq($bp_tablet) {
@@ -32,4 +36,16 @@
 
 .hidden {
   display: none;
+}
+
+.fieldset__active {
+  .arrow {
+    transform: rotate(180deg);
+  }
+  .section__collapse {
+    display: block;
+  }
+  .section__collapse.design__colors {
+    display: flex;
+  }
 }
