@@ -1,30 +1,21 @@
 'use strict';
-
 const titleArray = document.querySelectorAll('.collapse__title');
-const sectionArray = document.querySelectorAll('.section__collapse');
-const arrowArray = document.querySelectorAll('.arrow');
+const fieldsets = document.querySelectorAll('.form__fieldset');
 
 const activateCollapse = event => {
   const currentTitle = event.currentTarget;
-  const arrowEle = currentTitle.querySelector('.arrow');
-  const sectionSibling = currentTitle.nextElementSibling;
+  const titleContainer = currentTitle.parentElement;
 
-  // if the section is open and we click it again
-  if (!sectionSibling.classList.contains('hidden')) {
-    sectionSibling.classList.toggle('hidden');
-    arrowEle.classList.add('fa-chevron-down');
-    arrowEle.classList.remove('fa-chevron-up');
-    // if all sections are closed or one is open and we click on another section
-  } else {
-    for (const section of sectionArray) {
-      section.classList.add('hidden');
+  // if i'm open
+  if (titleContainer.classList.contains('fieldset__active')) {
+    titleContainer.classList.toggle('fieldset__active');
+  }
+  // if i'm closed
+  else {
+    for (const fieldset of fieldsets) {
+      fieldset.classList.remove('fieldset__active');
     }
-    for (const arrow of arrowArray) {
-      arrow.classList.add('fa-chevron-down');
-      arrow.classList.remove('fa-chevron-up');
-    }
-    arrowEle.classList.toggle('fa-chevron-up');
-    sectionSibling.classList.remove('hidden');
+    titleContainer.classList.toggle('fieldset__active');
   }
 };
 
