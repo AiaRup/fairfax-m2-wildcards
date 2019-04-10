@@ -34,8 +34,13 @@
 .fieldset__legend {
   height: 0;
   overflow: hidden;
+  display: inline-block;
 }
 
 .form__fieldset {
   border: none;
+}
+
+.hidden {
+  display: none;
 }

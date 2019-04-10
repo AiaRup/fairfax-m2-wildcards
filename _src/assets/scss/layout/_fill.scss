@@ -1,20 +1,14 @@
 .fill__container.form__fieldset {
-  padding: rem(10) 0 rem(30);
+  padding-top: rem(10);
   border-bottom: rem(1) solid $color-border;
 }
 
 .fill__container-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: rem(25);
+  @include titleContainer;
 }
 
 .title__fill-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include titleFlex;
   .fill__icon {
     padding-right: 0.625rem;
     font-size: rem(18);
@@ -36,6 +30,7 @@
 
 .fill__container-form {
   font-size: rem(14);
+  padding: rem(15) 0 rem(30);
 }
 
 .fill__field-container {
