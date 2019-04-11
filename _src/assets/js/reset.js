@@ -1,7 +1,7 @@
 'use strict';
 
 const fill__fields = document.querySelectorAll('.fill__field');
-const reset__button = document.querySelector('.preview__button');
+const resetButton = document.querySelector('.preview__button');
 const card__name = document.querySelector('.card__name');
 const card__job = document.querySelector('.card__job');
 const icons = document.querySelectorAll('.card__link-sm');
@@ -27,6 +27,15 @@ function resetPreview() {
   card__name.innerHTML = defaultUser.name;
   card__job.innerHTML = defaultUser.job;
   card__image.style.backgroundImage = `url(${defaultUser.image})`;
+  userProfile = {
+    name: '',
+    job: '',
+    email: '',
+    phone: '',
+    linkedin: '',
+    github: '',
+    image: ''
+  };
 }
 
-reset__button.addEventListener('click', resetPreview);
+resetButton.addEventListener('click', resetPreview);
