@@ -28,6 +28,14 @@ function resetPreview() {
   card__name.innerHTML = defaultUser.name;
   card__job.innerHTML = defaultUser.job;
   card__image.style.backgroundImage = `url(${defaultUser.image})`;
+  userProfile = {
+    name: "",
+    job: "",
+    email: "",
+    phone: "",
+    linkedin: "",
+    github: ""
+  };
 }
 
 reset__button.addEventListener("click", resetPreview);
