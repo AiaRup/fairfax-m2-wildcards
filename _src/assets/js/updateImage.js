@@ -5,6 +5,7 @@ const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
+const fakeImages = document.querySelectorAll('.img__user');
 
 
 /**
@@ -20,6 +21,12 @@ function writeImage() {
  
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+
+  for(const image of fakeImages) {
+    image.src=fr.result;
+    image.alt="Imagen de perfil";
+  }
+  
 }
 
 

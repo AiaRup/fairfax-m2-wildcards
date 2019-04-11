@@ -21,6 +21,7 @@
       "_src/assets/js/collapse.js",
       "_src/assets/js/colorPalette.js",
       "_src/assets/js/previewData.js",
+      "_src/assets/js/reset.js",
       "_src/assets/js/updateImage.js"
         ],
     "dest": "public/assets/js/",
