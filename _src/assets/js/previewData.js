@@ -19,6 +19,7 @@ const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
   const value = formInput.value;
+
   if (value === '') {
     cardInput.innerHTML = defaultData;
   } else {
