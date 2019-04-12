@@ -1,9 +1,7 @@
 'use strict';
 
 const name = document.getElementById('name');
-const cardName = document.querySelector('.card__name');
 const job = document.getElementById('job');
-const cardJob = document.querySelector('.card__job');
 const linkEmail = document.querySelector('.email__link');
 const email = document.getElementById('email');
 const iconEmail = document.querySelector('.sm__email');
@@ -17,16 +15,6 @@ const linkGit = document.querySelector('.github__link');
 const github = document.getElementById('github');
 const iconGit = document.querySelector('.sm__github');
 
-let userProfile = {
-  name: '',
-  job: '',
-  email: '',
-  phone: '',
-  linkedin: '',
-  github: '',
-  image: ''
-};
-
 const changeDataCard = (cardInput, defaultData, formInput) => {
   const value = formInput.value;
   const objectKey = formInput.getAttribute('id');
@@ -39,16 +27,16 @@ const changeDataCard = (cardInput, defaultData, formInput) => {
 };
 
 name.addEventListener('keyup', () => {
-  changeDataCard(cardName, 'Nombre Apellido', name);
+  changeDataCard(cardName, defaultUser.name, name);
 });
 
 job.addEventListener('keyup', () => {
-  changeDataCard(cardJob, 'Front-end developer', job);
+  changeDataCard(cardJob, defaultUser.job, job);
 });
 
 const changeLinkCard = (cardInput, link, formInput, defaultHref) => {
   const value = formInput.value;
-  const objectKey = formInput.getAttribute('id');
+  const objectKey = formInput.id;
   userProfile[objectKey] = value;
   if (value === '') {
     cardInput.classList.add('hidden');
@@ -68,7 +56,12 @@ mobile.addEventListener('keyup', () => {
 });
 
 linkedin.addEventListener('keyup', () => {
-  changeLinkCard(iconLinkedin, linkLinkedin, linkedin, 'https://www.linkedin.com/in/');
+  changeLinkCard(
+    iconLinkedin,
+    linkLinkedin,
+    linkedin,
+    'https://www.linkedin.com/in/'
+  );
 });
 
 github.addEventListener('keyup', () => {
