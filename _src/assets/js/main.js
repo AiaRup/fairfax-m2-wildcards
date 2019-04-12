@@ -14,3 +14,13 @@ let userProfile = {
   photo: '',
   palette: '',
 };
+
+//Save object in localStorage
+
+function saveData(){
+  localStorage.setItem('userProfile', JSON.stringify(userProfile));
+}
+
+function getData(){
+  const tempData = JSON.parse(localStorage.getItem('userProfile'));
+}

@@ -17,7 +17,7 @@ const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
   const value = formInput.value;
-  const objectKey = formInput.getAttribute('id');
+  const objectKey = formInput.id;
   userProfile[objectKey] = value;
   if (value === '') {
     cardInput.innerHTML = defaultData;
