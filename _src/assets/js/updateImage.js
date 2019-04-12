@@ -19,7 +19,8 @@ function getImage(e) {
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  userProfile.image = fr.result;
+  userProfile.photo = fr.result;
+
   for (const image of fakeImages) {
     image.src = fr.result;
     image.alt = 'Imagen de perfil';
