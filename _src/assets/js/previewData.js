@@ -19,6 +19,7 @@ const changeDataCard = (cardInput, defaultData, formInput) => {
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;
+  saveData();
   if (value === '') {
     cardInput.innerHTML = defaultData;
   } else {
@@ -38,6 +39,7 @@ const changeLinkCard = (cardInput, link, formInput, defaultHref) => {
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;
+  saveData();
   if (value === '') {
     cardInput.classList.add('hidden');
     link.href = '';
