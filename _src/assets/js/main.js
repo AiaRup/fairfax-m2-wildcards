@@ -17,10 +17,19 @@ let userProfile = {
 
 //Save object in localStorage
 
-function saveData(){
+function saveData() {
   localStorage.setItem('userProfile', JSON.stringify(userProfile));
 }
 
-function getData(){
-  const tempData = JSON.parse(localStorage.getItem('userProfile'));
+function getData() {
+  return JSON.parse(localStorage.getItem('userProfile'));
 }
+
+// if local storage is empty
+// userProfile = userDefault;
+// saveData();
+
+// else
+// userProfile = getData();
+// update previewcard
+// update inputs

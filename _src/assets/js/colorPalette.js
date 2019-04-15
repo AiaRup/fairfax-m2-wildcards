@@ -8,6 +8,7 @@ const changeColorPalette = (event, classToAdd) => {
   cardPreview.classList.add(classToAdd);
   // change palette of userProfile object
   userProfile.palette = parseInt(event.path[0].dataset.theme);
+  saveData();
 };
 
 selection1.addEventListener('change', event => {
