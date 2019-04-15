@@ -4,6 +4,7 @@ const createBtn = document.querySelector('.share__button-create');
 const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card';
 
 const postData = () => {
+  console.log('user', userProfile);
   fetch(url, {
     method: 'POST',
     mode: 'cors',
@@ -19,7 +20,13 @@ const postData = () => {
     .then(response => response.json())
     .then(result => {
       console.log('result', result);
-    });
+    })
+    .catch(error => console.log('error', error));
 };
 
 createBtn.addEventListener('click', postData);
+
+// hide the share section
+// if all fields are valid
+// div for errors
+// class for input with errors
