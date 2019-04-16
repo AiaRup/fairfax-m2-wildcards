@@ -12,5 +12,5 @@ let userProfile = {
   linkedin: '',
   github: '',
   photo: '',
-  palette: '',
+  palette: 1,
 };
