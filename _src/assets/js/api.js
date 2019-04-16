@@ -1,26 +1,68 @@
 'use strict';
 
 const createBtn = document.querySelector('.share__button-create');
-const error = document.querySelector('.error');
+const error = document.querySelector('.errorMsg');
 const shareSection = document.querySelector('.share__hidden');
 const form = document.querySelector('.main__settings');
 const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card';
+const inputs = document.querySelectorAll('.fill__field');
+
+const validateUser = () => {
+  let valid = true;
+  // validate if inputs are empty
+  for (const input of inputs) {
+    if (input.value === '' && input.id !== 'phone') {
+      input.parentElement.classList.add('error');
+      valid = false;
+    }
+  }
+  // validate change of default image
+  if (userProfile.photo === imageUrlBase || userProfile.photo === '') {
+    imageContainer.classList.add('error');
+    valid = false;
+  }
+  return valid;
+};
 
 const postData = user => {
-  console.log('user', userProfile);
-  fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(user),
-    headers: {
-      'content-type': 'application/json',
-    },
-  })
-    .then(response => response.json())
-    .then(result => {
-      console.log('result', result);
-      showURL(result);
+  console.log(validateUser());
+  if (validateUser()) {
+    // change button style
+    createBtn.classList.add('share__button-active');
+    console.log('user', userProfile);
+    // clean msg div
+    error.innerHTML = '';
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: {
+        'content-type': 'application/json',
+      },
     })
-    .catch(error => console.log('error', error));
+      .then(response => response.json())
+      .then(result => {
+        console.log('result', result);
+        // show share section
+        shareSection.classList.remove('hidden');
+        showURL(result);
+      })
+      .catch(error => {
+        createBtn.classList.remove('share__button-active');
+        console.log('error', error);
+        error.innerHTML =
+          'Se ha producido un error de servidor. Inténtalo de nuevo.';
+        // const textError = document.createTextNode(
+        //   'Se ha producido un error de servidor. Inténtalo de nuevo.'
+        // );
+        // error.appendChild(textError);
+      });
+  } else {
+    error.innerHTML = '';
+    const textError = document.createTextNode(
+      '* Para continuar rellene los campos obligatorios'
+    );
+    error.appendChild(textError);
+  }
 };
 
 function showURL(result) {
@@ -32,6 +74,7 @@ function showURL(result) {
     linkElement.setAttribute('href', `${result.cardURL}`);
     linkElement.setAttribute('class', 'share__link');
   } else {
+    error.innerHTML = '';
     const textLink = document.createTextNode(`ERROR: ${result.error}`);
     error.appendChild(textLink);
   }
@@ -45,8 +88,3 @@ createBtn.addEventListener('click', () => {
   console.log('in create card');
   postData(userProfile);
 });
-
-// hide the share section
-// if all fields are valid
-// div for errors
-// class for input with errors

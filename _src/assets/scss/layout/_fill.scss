@@ -69,8 +69,8 @@
     padding: rem(4) rem(22) rem(6);
     box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
     cursor: pointer;
-    &:hover{
-      transition: 0.40s ease-in-out;
+    &:hover {
+      transition: 0.4s ease-in-out;
       background-color: $color-dOrange;
     }
   }
@@ -87,6 +87,21 @@
 }
 
 .img__user {
-  width:0;
+  width: 0;
   height: 0;
+}
+
+.error {
+  .fill__label {
+    color: red;
+  }
+  .fill__field {
+    border: 1px solid red;
+  }
+}
+
+.errorMsg {
+  text-align: center;
+  color: red;
+  font-weight: bold;
 }

@@ -69,21 +69,28 @@
     background-color: $color-button;
   }
   &:hover {
-    top:1px;
+    top: 1px;
     box-shadow: 0 5px $color-dOrange;
     position: relative;
   }
   &:active {
     background-color: $color-button;
-    top:6px;
+    top: 6px;
     outline: none;
     box-shadow: 0 0px $color-dOrange;
-    border:0;
+    border: 0;
     position: relative;
   }
   .card-icon {
     margin-right: rem(10);
   }
+}
+
+.share__button-active {
+  background-color: $color-button;
+  border: 0;
+  cursor: default;
+  pointer-events: none;
 }
 
 .share__hidden {
@@ -126,7 +133,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover{
+  &:hover {
     transition: transform 0.5s ease;
     transform: scale(1.05);
   }
