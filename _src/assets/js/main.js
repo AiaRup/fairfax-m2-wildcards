@@ -25,17 +25,17 @@ function getData() {
   return JSON.parse(localStorage.getItem('userProfile'));
 }
 
-function dataLocal() {
-  if(localStorage === '') {
-      userProfile = userDefault;
-  } else {
-      userProfile = getData();
-      return cardPreview;
-  }
-  console.log(dataLocal);
-}
+// function dataLocal() {
+//   if(localStorage === '') {
+//       userProfile = userDefault;
+//   } else {
+//       userProfile = getData();
+//       return cardPreview;
+//   }
+//   console.log(dataLocal);
+// }
 
-dataLocal();
+// dataLocal();
 
 // if local storage is empty
 // userProfile = userDefault;
