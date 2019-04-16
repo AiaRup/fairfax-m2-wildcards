@@ -23,7 +23,8 @@
       "_src/assets/js/colorPalette.js",
       "_src/assets/js/reset.js",
       "_src/assets/js/previewData.js",
-      "_src/assets/js/updateImage.js"
+      "_src/assets/js/updateImage.js",
+      "_src/assets/js/api.js"
     ],
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"
