@@ -16,6 +16,7 @@ const github = document.getElementById('github');
 const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
+  formInput.parentElement.classList.remove('error');
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;
@@ -36,6 +37,8 @@ job.addEventListener('keyup', () => {
 });
 
 const changeLinkCard = (cardInput, link, formInput) => {
+  formInput.parentElement.classList.remove('error');
+
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;

@@ -20,6 +20,7 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   userProfile.photo = fr.result;
+  imageContainer.classList.remove('error');
   saveData(); //Conserva la foto
 
   for (const image of fakeImages) {
