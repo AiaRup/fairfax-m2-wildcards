@@ -105,3 +105,11 @@
   color: red;
   font-weight: bold;
 }
+
+.requiered {
+  color: $color-gBlue;
+  margin-bottom: rem(6);
+  line-height: 1.43;
+  text-transform: initial;
+  font-size: rem(12);
+}

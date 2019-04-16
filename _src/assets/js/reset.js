@@ -39,15 +39,19 @@ function resetPreview() {
   cardPreview.classList.add('theme1');
 
   // reset user object
-  userProfile = {
-    name: '',
-    job: '',
-    email: '',
-    phone: '',
-    linkedin: '',
-    github: '',
-    photo: '',
-  };
+  userProfile = defaultUser;
+  // userProfile = {
+  //   name: '',
+  //   job: '',
+  //   email: '',
+  //   phone: '',
+  //   linkedin: '',
+  //   github: '',
+  //   photo: '',
+  // };
+
+  // delete from local storage
+  removeData();
 }
 
 resetButton.addEventListener('click', resetPreview);

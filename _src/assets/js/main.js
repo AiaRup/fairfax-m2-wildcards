@@ -26,6 +26,10 @@ function getData() {
   return JSON.parse(localStorage.getItem('userProfile'));
 }
 
+function removeData() {
+  localStorage.removeItem('userProfile');
+}
+
 // if local storage is empty
 // userProfile = userDefault;
 // saveData();
