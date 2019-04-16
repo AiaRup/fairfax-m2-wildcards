@@ -1,10 +1,8 @@
 ![Awesome profile cards](_src/assets/images/awesome-logo.svg)
 
-# Awesome Profile Cards
-
 ## .Wildcards
 
-En este proyecto, hemos preparado un sitio web que puede usarse para preparar una tarjeta de visita personal y compartirla en Twitter. El sitio consta de 2 páginas web, una página de inicio desde la que puede acceder a la página de diseño de la tarjeta. En la página de diseño de la tarjeta, puede ingresar sus datos personales, elegir de la paleta de colores el diseño deseado, agregar una foto personal y enlaces a sus redes sociales.
+En este proyecto, hemos realizado una aplicación web que nos permite crear una tarjeta de visita personalizada. El sitio consta de 2 páginas webs: una página de inicio (landing page) desde la cual se puede acceder a la segunda, la página de diseño de la tarjeta. En esta página ingresas tus datos profesionales, eliges el diseño de la paleta deseada y agregas una foto personal. ¡Lo mejor es que puedes compartirla en Twitter 🐦!
 
 ## Estructura del proyecto
 
