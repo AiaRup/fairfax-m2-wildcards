@@ -4,8 +4,20 @@ const createBtn = document.querySelector('.share__button-create');
 const error = document.querySelector('.errorMsg');
 const shareSection = document.querySelector('.share__hidden');
 const form = document.querySelector('.main__settings');
-const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card';
+const linkContainer = document.querySelector('.share__link-container');
+const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
 const inputs = document.querySelectorAll('.fill__field');
+
+// const dataCard = {
+//   palette: 1,
+//   name: 'Carlos Mananas',
+//   job: 'Tuerto',
+//   phone: '+34 555435345',
+//   email: 'carlos@adalab.es',
+//   linkedin: 'oneeyedman',
+//   github: 'oneeyedman',
+//   photo: imageUrlBase,
+// };
 
 const validateUser = () => {
   let valid = true;
@@ -73,6 +85,9 @@ function showURL(result) {
     linkElement.appendChild(textLink);
     linkElement.setAttribute('href', `${result.cardURL}`);
     linkElement.setAttribute('class', 'share__link');
+    linkElement.setAttribute('target', '_blank');
+    linkElement.appendChild(textLink);
+    linkContainer.appendChild(linkElement);
   } else {
     error.innerHTML = '';
     const textLink = document.createTextNode(`ERROR: ${result.error}`);
