@@ -25,7 +25,8 @@
       "_src/assets/js/previewData.js",
       "_src/assets/js/updateImage.js",
       "_src/assets/js/localStorage.js",
-      "_src/assets/js/api.js"
+      "_src/assets/js/api.js",
+      "_src/assets/js/loadPage.js"
     ],
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"

@@ -20,13 +20,14 @@ const defaultUser = {
 function resetPreview() {
   for (const input of fillFields) {
     input.value = '';
-    fillPreview.style.backgroundImage = 'url()';
   }
   for (const icon of icons) {
     if (!icon.classList.contains('hidden')) {
       icon.classList.add('hidden');
     }
   }
+  fillPreview.style.backgroundImage = 'url()';
+
   // reset card preview
   cardName.innerHTML = defaultUser.name;
   cardJob.innerHTML = defaultUser.job;
@@ -39,16 +40,16 @@ function resetPreview() {
   cardPreview.classList.add('theme1');
 
   // reset user object
-  userProfile = defaultUser;
-  // userProfile = {
-  //   name: '',
-  //   job: '',
-  //   email: '',
-  //   phone: '',
-  //   linkedin: '',
-  //   github: '',
-  //   photo: '',
-  // };
+  userProfile = {
+    name: '',
+    job: '',
+    email: '',
+    phone: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+    palette: 1,
+  };
 
   // delete from local storage
   removeData();
