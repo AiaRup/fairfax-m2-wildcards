@@ -5,16 +5,26 @@
       <i class="fas fa-share-alt share-icon"></i>
       <h3 class="share__title-text">comparte</h3>
     </div>
-    <div class="share__button-arrow"><i class="fas fa-chevron-down arrow"></i></div>
+    <div class="share__button-arrow">
+      <i class="fas fa-chevron-down arrow"></i>
+    </div>
   </div>
   <div class="section__collapse">
     <div>
-      <button type="submit" class="share__button-create"><i class="far fa-address-card card-icon"></i>Crear tarjeta</button>
+      <button type="submit" class="share__button-create">
+        <i class="far fa-address-card card-icon"></i>Crear tarjeta
+      </button>
+      <div class="errorMsg"></div>
     </div>
-    <div class="share__hidden">
+    <div class="share__hidden hidden">
       <p class="share__text">La tarjeta ha sido creada:</p>
-      <a href="#" class="share__link">https:....</a>
-      <a href="#" class="share__button-twitter"><i class="fab fa-twitter twitter-icon"></i>Compartir en twitter</a>
+      <div class="share__link-container"></div>
+      <a
+        href="https://twitter.com/intent/tweet?text=I%20created%20in%20awesome%20profile-cards%20http://beta.adalab.es/fairfax-m2-wildcards/%20my%20business%20card"
+        class="share__button-twitter twitter-share-button"
+        target="_blank"
+        ><i class="fab fa-twitter twitter-icon"></i>Compartir en twitter</a
+      >
     </div>
   </div>
 </fieldset>

@@ -9,3 +9,7 @@ function saveData() {
 function getData() {
   return JSON.parse(localStorage.getItem('userProfile'));
 }
+
+function removeData() {
+  localStorage.removeItem('userProfile');
+}
