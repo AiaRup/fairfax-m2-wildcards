@@ -13,28 +13,5 @@ let userProfile = {
   linkedin: '',
   github: '',
   photo: '',
-  palette: '',
+  palette: 1,
 };
-
-//Save object in localStorage
-
-function saveData() {
-  localStorage.setItem('userProfile', JSON.stringify(userProfile));
-}
-
-function getData() {
-  return JSON.parse(localStorage.getItem('userProfile'));
-}
-
-function removeData() {
-  localStorage.removeItem('userProfile');
-}
-
-// if local storage is empty
-// userProfile = userDefault;
-// saveData();
-
-// else
-// userProfile = getData();
-// update previewcard
-// update inputs
