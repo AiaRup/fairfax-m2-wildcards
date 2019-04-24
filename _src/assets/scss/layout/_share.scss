@@ -40,6 +40,11 @@
   line-height: normal;
   letter-spacing: normal;
   text-decoration: none;
+  display: block;
+  width: rem(300);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .share__button-create {
