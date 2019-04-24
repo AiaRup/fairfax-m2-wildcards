@@ -20,25 +20,24 @@ const defaultUser = {
 function resetPreview() {
   for (const input of fillFields) {
     input.value = '';
-    fillPreview.style.backgroundImage = 'url()';
   }
   for (const icon of icons) {
     if (!icon.classList.contains('hidden')) {
       icon.classList.add('hidden');
     }
   }
-  // reset card preview
+  fillPreview.style.backgroundImage = 'url()';
+
   cardName.innerHTML = defaultUser.name;
   cardJob.innerHTML = defaultUser.job;
   cardImage.style.backgroundImage = `url(${defaultUser.photo})`;
-  // reset palette
+
   selection1.checked = true;
   selection2.checked = false;
   selection3.checked = false;
   cardPreview.classList.remove('theme1', 'theme2', 'theme3');
   cardPreview.classList.add('theme1');
 
-  // reset user object
   userProfile = {
     name: '',
     job: '',
@@ -47,7 +46,10 @@ function resetPreview() {
     linkedin: '',
     github: '',
     photo: '',
+    palette: 1,
   };
+
+  removeData();
 }
 
 resetButton.addEventListener('click', resetPreview);

@@ -7,7 +7,7 @@ const email = document.getElementById('email');
 const iconEmail = document.querySelector('.sm__email');
 const linkMobile = document.querySelector('.mobile__link');
 const mobile = document.getElementById('phone');
-const iconMobile = document.querySelector('.sm__mobile');
+const iconMobile = document.querySelector('.sm__phone');
 const linkLinkedin = document.querySelector('.linkedin__link');
 const linkedin = document.getElementById('linkedin');
 const iconLinkedin = document.querySelector('.sm__linkedin');
@@ -16,13 +16,16 @@ const github = document.getElementById('github');
 const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
+  formInput.parentElement.classList.remove('error');
+  startOver();
   const value = formInput.value;
-  const objectKey = formInput.getAttribute('id');
+  const objectKey = formInput.id;
   userProfile[objectKey] = value;
+  saveData();
   if (value === '') {
     cardInput.innerHTML = defaultData;
   } else {
-    cardInput.innerHTML = value;
+    cardInput.innerHTML = value.charAt(0).toUpperCase()+value.slice(1);
   }
 };
 
@@ -34,36 +37,34 @@ job.addEventListener('keyup', () => {
   changeDataCard(cardJob, defaultUser.job, job);
 });
 
-const changeLinkCard = (cardInput, link, formInput, defaultHref) => {
+const changeLinkCard = (cardInput, link, formInput) => {
+  formInput.parentElement.classList.remove('error');
+  startOver();
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;
+  saveData();
   if (value === '') {
     cardInput.classList.add('hidden');
     link.href = '';
   } else {
     cardInput.classList.remove('hidden');
-    link.href = defaultHref + value;
+    link.href = formInput.dataset['info'] + value;
   }
 };
 
 email.addEventListener('keyup', () => {
-  changeLinkCard(iconEmail, linkEmail, email, 'mailto:');
+  changeLinkCard(iconEmail, linkEmail, email);
 });
 
 mobile.addEventListener('keyup', () => {
-  changeLinkCard(iconMobile, linkMobile, mobile, 'tel:');
+  changeLinkCard(iconMobile, linkMobile, mobile);
 });
 
 linkedin.addEventListener('keyup', () => {
-  changeLinkCard(
-    iconLinkedin,
-    linkLinkedin,
-    linkedin,
-    'https://www.linkedin.com/in/'
-  );
+  changeLinkCard(iconLinkedin, linkLinkedin, linkedin);
 });
 
 github.addEventListener('keyup', () => {
-  changeLinkCard(iconGit, linkGit, github, 'https://github.com/');
+  changeLinkCard(iconGit, linkGit, github);
 });

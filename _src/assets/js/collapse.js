@@ -6,11 +6,9 @@ const activateCollapse = event => {
   const currentTitle = event.currentTarget;
   const titleContainer = currentTitle.parentElement;
 
-  // if i'm open
   if (titleContainer.classList.contains('fieldset__active')) {
     titleContainer.classList.toggle('fieldset__active');
   }
-  // if i'm closed
   else {
     for (const fieldset of fieldsets) {
       fieldset.classList.remove('fieldset__active');
