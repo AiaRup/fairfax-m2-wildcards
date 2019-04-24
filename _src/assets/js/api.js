@@ -14,7 +14,7 @@ const loading = document.querySelector('.loading');
 
 const validateUser = () => {
   let valid = true;
-  // validate if inputs are empty
+
   for (const input of inputs) {
     const { id } = input;
     if (input.value === '' && id !== 'phone' && id !== 'add__img') {
@@ -22,7 +22,7 @@ const validateUser = () => {
       valid = false;
     }
   }
-  // validate change of default image
+
   if (userProfile.photo === imageUrlBase || userProfile.photo === '') {
     imageContainer.classList.add('error');
     valid = false;
@@ -42,7 +42,7 @@ const showURL = result => {
     linkElement.setAttribute('target', '_blank');
     linkElement.appendChild(textLink);
     linkContainer.appendChild(linkElement);
-    // show share section
+
     shareSection.classList.remove('hidden');
   } else {
     error.innerHTML = '';
@@ -53,9 +53,8 @@ const showURL = result => {
 
 const postData = user => {
   if (validateUser()) {
-    // change button style
+    
     createBtn.classList.add('share__button-active');
-    // clean msg div
     error.innerHTML = '';
     loading.classList.remove('hidden');
     fetch(url, {
@@ -69,7 +68,7 @@ const postData = user => {
       .then(result => {
         showURL(result);
         loading.classList.add('hidden');
-        // Añadir url para twitter
+
         const finalURL = urlTwitter + result.cardURL;
         shareButtonTwitter.href = finalURL;
       })
@@ -88,13 +87,11 @@ const postData = user => {
   }
 };
 
-// function to start over when user want to create another card
 function startOver() {
   createBtn.classList.remove('share__button-active');
   shareSection.classList.add('hidden');
 }
 
-// prevent form submit
 form.addEventListener('submit', event => {
   event.preventDefault();
 });

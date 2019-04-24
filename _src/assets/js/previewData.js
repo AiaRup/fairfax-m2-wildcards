@@ -16,9 +16,7 @@ const github = document.getElementById('github');
 const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
-  // change style of inputs error and button to create card
   formInput.parentElement.classList.remove('error');
-  // createBtn.classList.remove('share__button-active');
   startOver();
   const value = formInput.value;
   const objectKey = formInput.id;

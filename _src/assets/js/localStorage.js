@@ -1,7 +1,5 @@
 'use strict';
 
-//Save object in localStorage
-
 function saveData() {
   localStorage.setItem('userProfile', JSON.stringify(userProfile));
 }

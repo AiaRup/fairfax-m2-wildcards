@@ -19,10 +19,9 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   userProfile.photo = fr.result;
-  // update style of input error and create button
   imageContainer.classList.remove('error');
   startOver();
-  saveData(); //Conserva la foto
+  saveData(); 
 
   for (const image of fakeImages) {
     image.src = fr.result;

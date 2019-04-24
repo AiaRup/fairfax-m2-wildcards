@@ -28,18 +28,16 @@ function resetPreview() {
   }
   fillPreview.style.backgroundImage = 'url()';
 
-  // reset card preview
   cardName.innerHTML = defaultUser.name;
   cardJob.innerHTML = defaultUser.job;
   cardImage.style.backgroundImage = `url(${defaultUser.photo})`;
-  // reset palette
+
   selection1.checked = true;
   selection2.checked = false;
   selection3.checked = false;
   cardPreview.classList.remove('theme1', 'theme2', 'theme3');
   cardPreview.classList.add('theme1');
 
-  // reset user object
   userProfile = {
     name: '',
     job: '',
@@ -51,7 +49,6 @@ function resetPreview() {
     palette: 1,
   };
 
-  // delete from local storage
   removeData();
 }
 
