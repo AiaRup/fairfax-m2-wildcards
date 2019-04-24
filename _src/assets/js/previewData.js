@@ -7,7 +7,7 @@ const email = document.getElementById('email');
 const iconEmail = document.querySelector('.sm__email');
 const linkMobile = document.querySelector('.mobile__link');
 const mobile = document.getElementById('phone');
-const iconMobile = document.querySelector('.sm__mobile');
+const iconMobile = document.querySelector('.sm__phone');
 const linkLinkedin = document.querySelector('.linkedin__link');
 const linkedin = document.getElementById('linkedin');
 const iconLinkedin = document.querySelector('.sm__linkedin');
@@ -16,7 +16,10 @@ const github = document.getElementById('github');
 const iconGit = document.querySelector('.sm__github');
 
 const changeDataCard = (cardInput, defaultData, formInput) => {
+  // change style of inputs error and button to create card
   formInput.parentElement.classList.remove('error');
+  // createBtn.classList.remove('share__button-active');
+  startOver();
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;
@@ -38,7 +41,7 @@ job.addEventListener('keyup', () => {
 
 const changeLinkCard = (cardInput, link, formInput) => {
   formInput.parentElement.classList.remove('error');
-
+  startOver();
   const value = formInput.value;
   const objectKey = formInput.id;
   userProfile[objectKey] = value;

@@ -15,7 +15,8 @@ const validateUser = () => {
   let valid = true;
   // validate if inputs are empty
   for (const input of inputs) {
-    if (input.value === '' && input.id !== 'phone') {
+    const { id } = input;
+    if (input.value === '' && id !== 'phone' && id !== 'add__img') {
       input.parentElement.classList.add('error');
       valid = false;
     }
@@ -31,6 +32,7 @@ const validateUser = () => {
 const showURL = result => {
   const linkElement = document.createElement('a');
   if (result.success) {
+    linkContainer.innerHTML = '';
     shareSection.classList.remove('hidden');
     const textLink = document.createTextNode(result.cardURL);
     linkElement.appendChild(textLink);
@@ -39,9 +41,11 @@ const showURL = result => {
     linkElement.setAttribute('target', '_blank');
     linkElement.appendChild(textLink);
     linkContainer.appendChild(linkElement);
+    // show share section
+    shareSection.classList.remove('hidden');
   } else {
     error.innerHTML = '';
-    const textLink = document.createTextNode(`ERROR: ${result.error}`);
+    const textLink = document.createTextNode(`ERROR: ${result.error}.`);
     error.appendChild(textLink);
   }
 };
@@ -50,7 +54,6 @@ const postData = user => {
   if (validateUser()) {
     // change button style
     createBtn.classList.add('share__button-active');
-    console.log('user', userProfile);
     // clean msg div
     error.innerHTML = '';
     fetch(url, {
@@ -62,9 +65,6 @@ const postData = user => {
     })
       .then(response => response.json())
       .then(result => {
-        console.log('result', result);
-        // show share section
-        shareSection.classList.remove('hidden');
         showURL(result);
         // Añadir url para twitter
         const finalURL = urlTwitter + result.cardURL;
@@ -72,13 +72,8 @@ const postData = user => {
       })
       .catch(error => {
         createBtn.classList.remove('share__button-active');
-        console.log('error', error);
         error.innerHTML =
           'Se ha producido un error de servidor. Inténtalo de nuevo.';
-        // const textError = document.createTextNode(
-        //   'Se ha producido un error de servidor. Inténtalo de nuevo.'
-        // );
-        // error.appendChild(textError);
       });
   } else {
     error.innerHTML = '';
@@ -88,6 +83,12 @@ const postData = user => {
     error.appendChild(textError);
   }
 };
+
+// function to start over when user want to create another card
+function startOver() {
+  createBtn.classList.remove('share__button-active');
+  shareSection.classList.add('hidden');
+}
 
 // prevent form submit
 form.addEventListener('submit', event => {

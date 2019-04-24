@@ -6,6 +6,9 @@ const selection3 = document.getElementById('selection3');
 const changeColorPalette = (event, classToAdd) => {
   cardPreview.classList.remove('theme1', 'theme2', 'theme3');
   cardPreview.classList.add(classToAdd);
+  // update create btn style
+  createBtn.classList.remove('share__button-active');
+  startOver();
   // change palette of userProfile object
   userProfile.palette = parseInt(event.path[0].dataset.theme);
   saveData();
