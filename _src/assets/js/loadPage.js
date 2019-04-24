@@ -28,7 +28,7 @@ function updateImageOnLoad(img) {
 function updateTextAndLinks(userProp, localData, input) {
   if (userProp === 'name' || userProp === 'job') {
     const cardTextToUpdate = document.querySelector(`.card__${userProp}`);
-    cardTextToUpdate.innerHTML = localData;
+    cardTextToUpdate.innerHTML = localData.charAt(0).toUpperCase()+localData.slice(1);
   } else {
     const listLinkToUpdate = document.querySelector(`.sm__${userProp}`);
     listLinkToUpdate.classList.remove('hidden');

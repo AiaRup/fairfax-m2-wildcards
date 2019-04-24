@@ -8,8 +8,9 @@ const linkContainer = document.querySelector('.share__link-container');
 const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
 const inputs = document.querySelectorAll('.fill__field');
 const urlTwitter =
-  'https://twitter.com/intent/tweet?text=I%20created%20in%20awesome%20profile-cards%20http://beta.adalab.es/fairfax-m2-wildcards/%20my%20business%20card%20';
+  'https://twitter.com/intent/tweet?text=I%20created%20in%20awesome%20profile-cards%20http://beta.adalab.es/fairfax-m2-wildcards/%20🃏%20my%20business%20card%20';
 const shareButtonTwitter = document.querySelector('.share__button-twitter');
+const loading = document.querySelector('.loading');
 
 const validateUser = () => {
   let valid = true;
@@ -56,6 +57,7 @@ const postData = user => {
     createBtn.classList.add('share__button-active');
     // clean msg div
     error.innerHTML = '';
+    loading.classList.remove('hidden');
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(user),
@@ -66,11 +68,13 @@ const postData = user => {
       .then(response => response.json())
       .then(result => {
         showURL(result);
+        loading.classList.add('hidden');
         // Añadir url para twitter
         const finalURL = urlTwitter + result.cardURL;
         shareButtonTwitter.href = finalURL;
       })
       .catch(error => {
+        loading.classList.add('hidden');
         createBtn.classList.remove('share__button-active');
         error.innerHTML =
           'Se ha producido un error de servidor. Inténtalo de nuevo.';

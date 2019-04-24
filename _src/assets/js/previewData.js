@@ -27,7 +27,7 @@ const changeDataCard = (cardInput, defaultData, formInput) => {
   if (value === '') {
     cardInput.innerHTML = defaultData;
   } else {
-    cardInput.innerHTML = value;
+    cardInput.innerHTML = value.charAt(0).toUpperCase()+value.slice(1);
   }
 };
 
