@@ -1,21 +1,25 @@
 'use strict';
 
-const cardPreview = document.querySelector('.preview__card');
-const selection1 = document.getElementById('selection1');
 const selection2 = document.getElementById('selection2');
 const selection3 = document.getElementById('selection3');
 
-const changeColorPalette = classToAdd => {
+const changeColorPalette = (event, classToAdd) => {
   cardPreview.classList.remove('theme1', 'theme2', 'theme3');
   cardPreview.classList.add(classToAdd);
+  createBtn.classList.remove('share__button-active');
+  startOver();
+  userProfile.palette = parseInt(event.path[0].dataset.theme);
+  saveData();
 };
 
-selection1.addEventListener('change', () => {
-  changeColorPalette('theme1');
+selection1.addEventListener('change', event => {
+  changeColorPalette(event, 'theme1');
 });
-selection2.addEventListener('change', () => {
-  changeColorPalette('theme2');
+
+selection2.addEventListener('change', event => {
+  changeColorPalette(event, 'theme2');
 });
-selection3.addEventListener('change', () => {
-  changeColorPalette('theme3');
+
+selection3.addEventListener('change', event => {
+  changeColorPalette(event, 'theme3');
 });
