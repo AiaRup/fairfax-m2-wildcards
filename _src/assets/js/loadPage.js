@@ -18,7 +18,7 @@ const updateImageOnLoad = img => {
   changeImages(img);
 }
 
-function updateTextAndLinks(userProp, localData, input) {
+const updateTextAndLinks = (userProp, localData, input) => {
   if (userProp === 'name' || userProp === 'job') {
     const cardTextToUpdate = document.querySelector(`.card__${userProp}`);
     cardTextToUpdate.innerHTML = localData.charAt(0).toUpperCase()+localData.slice(1);
@@ -30,7 +30,7 @@ function updateTextAndLinks(userProp, localData, input) {
   }
 }
 
-function reload() {
+const reload = () => {
   const infoLocal = getData();
   if (infoLocal !== null) {
     userProfile = infoLocal;
