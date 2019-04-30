@@ -1,4 +1,5 @@
 'use strict';
+const themes = ['theme1', 'theme2', 'theme3'];
 const cardName = document.querySelector('.card__name');
 const cardJob = document.querySelector('.card__job');
 const selection1 = document.getElementById('selection1');

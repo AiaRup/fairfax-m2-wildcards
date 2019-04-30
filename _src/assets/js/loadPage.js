@@ -1,5 +1,4 @@
 'use strict';
-const themes = ['theme1', 'theme2', 'theme3'];
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 
 const updatePaletteOnLoad = storagePalette => {
