@@ -15,18 +15,22 @@ function getImage(e) {
   fr.readAsDataURL(myFile);
 }
 
+const changeImages = photo => {
+  profileImage.style.backgroundImage = `url(${photo})`;
+  profilePreview.style.backgroundImage = `url(${photo})`;
+
+  for (const image of fakeImages) {
+    image.src = photo;
+    image.alt = 'Imagen de perfil';
+  }
+}
+
 function writeImage() {
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  changeImages(fr.result);
   userProfile.photo = fr.result;
   imageContainer.classList.remove('error');
   startOver();
-  saveData(); 
-
-  for (const image of fakeImages) {
-    image.src = fr.result;
-    image.alt = 'Imagen de perfil';
-  }
+  saveData();
 }
 
 function fakeFileClick() {

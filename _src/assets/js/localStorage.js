@@ -1,13 +1,13 @@
 'use strict';
 
-function saveData() {
+const saveData = () => {
   localStorage.setItem('userProfile', JSON.stringify(userProfile));
 }
 
-function getData() {
+const getData = () => {
   return JSON.parse(localStorage.getItem('userProfile'));
 }
 
-function removeData() {
+const removeData = () => {
   localStorage.removeItem('userProfile');
 }

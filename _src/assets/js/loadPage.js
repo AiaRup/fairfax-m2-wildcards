@@ -2,12 +2,11 @@
 const themes = ['theme1', 'theme2', 'theme3'];
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 
-function updatePaletteOnLoad(storagePalette) {
-  const currentPalette = storagePalette;
+const updatePaletteOnLoad = storagePalette => {
   cardPreview.classList.remove(...themes);
-  cardPreview.classList.add(`theme${currentPalette}`);
+  cardPreview.classList.add(`theme${storagePalette}`);
   for (const radio of radioButtons) {
-    if (parseInt(radio.dataset['theme']) === currentPalette) {
+    if (parseInt(radio.dataset['theme']) === storagePalette) {
       radio.checked = true;
     } else {
       radio.checked = false;
@@ -15,16 +14,11 @@ function updatePaletteOnLoad(storagePalette) {
   }
 }
 
-function updateImageOnLoad(img) {
-  profileImage.style.backgroundImage = `url(${img})`;
-  profilePreview.style.backgroundImage = `url(${img})`;
-  for (const image of fakeImages) {
-    image.src = img;
-    image.alt = 'Imagen de perfil';
-  }
+const updateImageOnLoad = img => {
+  changeImages(img);
 }
 
-function updateTextAndLinks(userProp, localData, input) {
+const updateTextAndLinks = (userProp, localData, input) => {
   if (userProp === 'name' || userProp === 'job') {
     const cardTextToUpdate = document.querySelector(`.card__${userProp}`);
     cardTextToUpdate.innerHTML = localData.charAt(0).toUpperCase()+localData.slice(1);
@@ -36,7 +30,7 @@ function updateTextAndLinks(userProp, localData, input) {
   }
 }
 
-function reload() {
+const reload = () => {
   const infoLocal = getData();
   if (infoLocal !== null) {
     userProfile = infoLocal;
