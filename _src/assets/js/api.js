@@ -27,9 +27,9 @@ const validateUser = () => {
   return valid;
 };
 
-const setAttributes = (el, attrs) => {
-  for(var key in attrs) {
-    el.setAttribute(key, attrs[key]);
+const setAttributes = (element, attribute) => {
+  for(const key in attribute) {
+    element.setAttribute(key, attribute[key]);
   }
 }
 
