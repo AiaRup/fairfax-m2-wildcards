@@ -3,7 +3,7 @@ const titleArray = document.querySelectorAll('.collapse__title');
 const fieldsets = document.querySelectorAll('.form__fieldset');
 
 const activateCollapse = event => {
-  const currentTitle = event.currentTarget;
+  const {currentTarget: currentTitle} = event;
   const titleContainer = currentTitle.parentElement;
 
   if (titleContainer.classList.contains('fieldset__active')) {

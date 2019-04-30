@@ -1,8 +1,5 @@
 'use strict';
-
-const createBtn = document.querySelector('.share__button-create');
 const error = document.querySelector('.errorMsg');
-const shareSection = document.querySelector('.share__hidden');
 const form = document.querySelector('.main__settings');
 const linkContainer = document.querySelector('.share__link-container');
 const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
@@ -16,8 +13,8 @@ const validateUser = () => {
   let valid = true;
 
   for (const input of inputs) {
-    const { id } = input;
-    if (input.value === '' && id !== 'phone' && id !== 'add__img') {
+    const { id,value } = input;
+    if (value === '' && id !== 'phone' && id !== 'add__img') {
       input.parentElement.classList.add('error');
       valid = false;
     }
@@ -30,16 +27,20 @@ const validateUser = () => {
   return valid;
 };
 
+const setAttributes = (element, attribute) => {
+  for(const key in attribute) {
+    element.setAttribute(key, attribute[key]);
+  }
+}
+
 const showURL = result => {
   const linkElement = document.createElement('a');
   if (result.success) {
     linkContainer.innerHTML = '';
     shareSection.classList.remove('hidden');
     const textLink = document.createTextNode(result.cardURL);
-    linkElement.appendChild(textLink);
-    linkElement.setAttribute('href', `${result.cardURL}`);
-    linkElement.setAttribute('class', 'share__link');
-    linkElement.setAttribute('target', '_blank');
+    setAttributes(linkElement, {"href": `${result.cardURL}`, "class":'share__link',"target": '_blank'});
+
     linkElement.appendChild(textLink);
     linkContainer.appendChild(linkElement);
 
@@ -53,7 +54,7 @@ const showURL = result => {
 
 const postData = user => {
   if (validateUser()) {
-    
+
     createBtn.classList.add('share__button-active');
     error.innerHTML = '';
     loading.classList.remove('hidden');
@@ -86,11 +87,6 @@ const postData = user => {
     error.appendChild(textError);
   }
 };
-
-function startOver() {
-  createBtn.classList.remove('share__button-active');
-  shareSection.classList.add('hidden');
-}
 
 form.addEventListener('submit', event => {
   event.preventDefault();
