@@ -25,7 +25,7 @@ const changeImages = photo => {
   }
 }
 
-function writeImage() {
+const writeImage = () =>{
   changeImages(fr.result);
   userProfile.photo = fr.result;
   imageContainer.classList.remove('error');
@@ -33,7 +33,7 @@ function writeImage() {
   saveData();
 }
 
-function fakeFileClick() {
+const fakeFileClick = () =>{
   fileField.click();
 }
 
