@@ -2,9 +2,15 @@
 
 const selection2 = document.getElementById('selection2');
 const selection3 = document.getElementById('selection3');
+const createBtn = document.querySelector('.share__button-create');
+const shareSection = document.querySelector('.share__hidden');
 
 const colorArr = ['theme1', 'theme2', 'theme3'];
 
+const startOver = () => {
+  createBtn.classList.remove('share__button-active');
+  shareSection.classList.add('hidden');
+}
 
 const changeColorPalette = (event, classToAdd) => {
   cardPreview.classList.remove(... colorArr);
