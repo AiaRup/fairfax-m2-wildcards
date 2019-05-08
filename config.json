@@ -19,6 +19,7 @@
     "src": [
       "_src/assets/js/main.js",
       "_src/assets/js/localStorage.js",
+      "_src/assets/js/twitter.js",
       "_src/assets/js/imageUrl.js",
       "_src/assets/js/collapse.js",
       "_src/assets/js/colorPalette.js",
